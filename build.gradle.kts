@@ -25,5 +25,5 @@ java {
 }
 
 group = "NULL" /*自行修改谢谢*/
-version = "1.0.0"
+version = "3.0.0"
 description = "NereusOpusBase"
