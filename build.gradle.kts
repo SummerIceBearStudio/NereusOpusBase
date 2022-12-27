@@ -18,6 +18,7 @@ dependencies {
     compileOnly("com.comphenix.protocol:ProtocolLib:4.8.0")
     compileOnly("me.clip:placeholderapi:2.11.2")
     compileOnly(files("libs/InteractionVisualizer.jar"))
+    compileOnly("com.mojang:authlib:1.5.25")
 }
 
 java {
