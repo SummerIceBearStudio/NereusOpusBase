@@ -1,0 +1,27 @@
+enabled: true
+name: Evasion
+
+displayName: "闪避"
+description: "受到伤害时有概率免疫"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 2*level

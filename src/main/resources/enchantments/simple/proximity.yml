@@ -1,0 +1,25 @@
+enabled: true
+name: Proximity
+
+displayName: "压迫"
+description: "在触发范围内，与对手的距离越近伤害越高"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  max-distance: 2.5
+  damage-multiplier: 1+0.2*level/(dist+1.0)

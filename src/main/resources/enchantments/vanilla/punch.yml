@@ -1,0 +1,14 @@
+displayName: "冲击"
+description: "增加弓箭的击退距离"
+rarity: rare
+limits:
+  targets:
+    - bow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

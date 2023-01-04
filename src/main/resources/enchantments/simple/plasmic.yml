@@ -1,0 +1,25 @@
+enabled: true
+name: Plasmic
+
+displayName: "原生"
+description: "对穿着钻石和下界合金装备的目标的伤害提升"
+
+maxLevel: 5
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts:
+    - voltage
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.02*level*amount

@@ -1,0 +1,29 @@
+enabled: true
+name: SeriousDisease
+
+displayName: "痼疾"
+description: "射出的箭矢有概率使对手持续流血"
+
+maxLevel: 6
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  require-full-charge: true
+  chance: 3*level
+  damage: 0.5*level
+  duration: 20*level
+  repeat-ticks: 20

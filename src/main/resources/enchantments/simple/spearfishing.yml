@@ -1,0 +1,25 @@
+enabled: true
+name: Spearfishing
+
+displayName: "鱼叉"
+description: "击中水中的方块时有概率掉落鲜鱼"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level
+  drops: cod,salmon,pufferfish,tropical_fish

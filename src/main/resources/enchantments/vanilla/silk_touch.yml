@@ -1,0 +1,18 @@
+displayName: "精准采集"
+description: "被开采的方块掉落其本身"
+rarity: uncommon
+limits:
+  targets:
+    - shovels
+    - axes
+    - pickaxes
+    - hoes
+  conflicts:
+    - fortune
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

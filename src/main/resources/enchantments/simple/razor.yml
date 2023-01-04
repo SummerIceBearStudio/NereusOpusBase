@@ -1,0 +1,32 @@
+enabled: true
+name: Razor
+
+displayName: "利刃"
+description: "在攻击时伤害大幅提升"
+
+maxLevel: 4
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts:
+    - sharpness
+    - smite
+    - bane_of_arthropods
+    - defusion
+    - ender_slayer
+    - introversion
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.1*level
+  decrease-if-cooldown: true
+  disable-on-players: false

@@ -1,0 +1,26 @@
+enabled: true
+name: Splash
+
+displayName: "水花"
+description: "在落地处造成溅射伤害"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+  conflicts:
+    - wisdom
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  range: level
+  damage-splash: level

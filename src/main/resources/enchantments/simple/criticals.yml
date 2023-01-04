@@ -1,0 +1,26 @@
+enabled: true
+name: Criticals
+
+displayName: "暴戾"
+description: "暴击伤害提升"
+
+maxLevel: 6
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - carve
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.05*level

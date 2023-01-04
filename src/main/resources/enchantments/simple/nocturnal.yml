@@ -1,0 +1,25 @@
+enabled: true
+name: Nocturnal
+
+displayName: "夜伏"
+description: "在夜晚时造成的伤害提升"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts:
+    - diurnal
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.05*level

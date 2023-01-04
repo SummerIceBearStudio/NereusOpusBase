@@ -1,0 +1,45 @@
+enabled: true
+name: CustomMobKiller
+
+displayName: "自定义怪物增伤(模板附魔，勿直接添加)"
+description: "对叫做 <在这里修改你的自定义怪物名> 的怪物伤害增加"
+
+maxLevel: 3
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+level*0.3
+  mob-name: "在这里修改你的自定义怪物名"
+
+type: SIMPLE
+triggerType: ATTACK_ENTITY
+
+conditions:
+  1:
+    target: entity
+    type: LIVING_ENTITY
+    chains:
+      1-A:
+        target: custom_name
+        type: STRING
+        expression: "target contains mob-name"
+
+effects:
+  1:
+    target: damage
+    type: DOUBLE
+    expression: "target * %damage-multiplier%"

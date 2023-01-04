@@ -1,0 +1,28 @@
+enabled: true
+name: Shields
+
+displayName: "护盾"
+description: "长时间不受伤害下一次可以减伤"
+
+maxLevel: 8
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+level*0.1
+  duration: 160-10*level

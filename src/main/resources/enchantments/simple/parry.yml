@@ -1,0 +1,24 @@
+enabled: true
+name: Parry
+
+displayName: "格挡"
+description: "手持剑时受到的伤害降低"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1-0.1*level

@@ -1,0 +1,27 @@
+enabled: true
+name: Instability
+
+displayName: "爆裂"
+description: "射出的箭矢在落点产生爆炸冲击波"
+
+maxLevel: 2
+rarity: unknown
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  cause-fire: false
+  break-blocks: false
+  power: level*0.5

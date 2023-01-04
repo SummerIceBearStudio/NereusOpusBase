@@ -1,0 +1,28 @@
+enabled: true
+name: Energizing
+
+displayName: "活力"
+description: "挖掘后获得急迫效果"
+
+maxLevel: 3
+rarity: unknown
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+    - axes
+    - shovels
+    - hoes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  duration: 8*level
+  amplifier: level

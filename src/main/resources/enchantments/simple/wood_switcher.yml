@@ -1,0 +1,27 @@
+enabled: true
+name: WoodSwitcher
+
+displayName: "异生"
+description: "砍伐木头时有概率掉落其他种类的木头"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - axes
+  conflicts:
+    - silk_touch
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  drops: oak_log,birch_log,spruce_log,jungle_log,acacia_log,dark_oak_log
+  chance: 12.5*level
+  targets: oak_log,birch_log,spruce_log,jungle_log,acacia_log,dark_oak_log

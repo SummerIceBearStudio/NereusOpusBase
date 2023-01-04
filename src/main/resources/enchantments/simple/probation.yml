@@ -1,0 +1,29 @@
+enabled: true
+name: Probation
+
+displayName: "感化"
+description: "受到攻击时有概率给感化攻击者，使其漂浮起来"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 4*level
+  duration: 40*level
+  amplifier: level

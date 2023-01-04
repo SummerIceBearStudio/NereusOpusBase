@@ -1,0 +1,26 @@
+enabled: true
+name: HealingCloseCombat
+
+displayName: "回春"
+description: "使得被攻击的血量降低的玩家血量恢复"
+
+maxLevel: 3
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  heal: level*2
+  require-full-charge: true

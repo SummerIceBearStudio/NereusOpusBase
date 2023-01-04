@@ -1,0 +1,20 @@
+displayName: "弹射物保护"
+description: "减少弹射物伤害"
+rarity: uncommon
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts:
+    - fire_protection
+    - feather_falling
+    - protection
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

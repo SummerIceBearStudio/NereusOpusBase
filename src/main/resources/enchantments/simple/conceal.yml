@@ -1,0 +1,27 @@
+enabled: true
+name: Conceal
+
+displayName: "隐匿"
+description: "让怪物自动追踪的距离变短"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  range: 16-level*3

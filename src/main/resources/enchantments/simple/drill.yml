@@ -1,0 +1,32 @@
+enabled: true
+name: Drill
+
+displayName: "穿凿"
+description: "挖掘时连同后方的方块"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+  conflicts:
+    - lumberjack
+    - blast_mining
+    - vein
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  disable-on-sneak: true
+  enable-sound: false
+  permission-check: true
+  hardness-check: bedrock,obisidian,ender_portal_frame
+  range: level
+  chance: 100

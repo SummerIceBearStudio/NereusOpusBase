@@ -1,0 +1,25 @@
+enabled: true
+name: Identify
+
+displayName: "成像"
+description: "受到伤害时有概率使攻击者获得发光效果"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - shield
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 25*level
+  duration: 50*level

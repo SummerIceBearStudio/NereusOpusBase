@@ -1,0 +1,74 @@
+yu enabled: true
+name: TestMagmaKiller
+
+displayName: "测试附魔-岩浆怪杀手"
+description: "增加对血量较多（向上取整达到判定线）但是低于玩家血量的岩浆怪的伤害"
+
+maxLevel: 3
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+level*0.3
+  health-judging-line: 15-level
+
+
+type: SIMPLE #类型
+triggerType: ATTACK_ENTITY #触发器是实体攻击实体事件
+
+variables: #变量
+  - magma_health #岩浆怪的血量
+
+conditions: #条件
+  1: #第一个条件
+    target: entity #对象是被伤害的实体
+    type: LIVING_ENTITY #对象类型是实体
+    chains:
+      1-A: #检测实体是否属于岩浆怪
+        target: type
+        type: STRING
+        expression: "target == MAGMA_CUBE"
+      1-B: #检测实体血量是否高于15
+        target: health
+        type: DOUBLE
+        assignment: magma_health
+        chains: #继续迭代！
+          1-B-I:
+            target: ceil #向上取整
+            type: DOUBLE
+            expression: "target >= %health-judging-line%" #判定是否大于等于线
+  2:
+    target: damager
+    type: LIVING_ENTITY
+    chains:
+      1-A:
+        target: health
+        type: DOUBLE
+        expression: "target >= %magma_health%"
+
+effects: #效果
+  1: #第一个效果
+    target: damage #修改对象是伤害
+    type: DOUBLE #对象类型是小数
+    expression: "target * %damage-multiplier%" #修改后的伤害表达式
+  2:
+    target: damager
+    type: LIVING_ENTITY
+    chains:
+      2-A:
+        target: max_health
+        type: DOUBLE
+        expression: "target + level*2"

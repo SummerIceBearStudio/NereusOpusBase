@@ -1,0 +1,17 @@
+displayName: "摔落保护"
+description: "减少跌落伤害"
+rarity: common
+limits:
+  targets:
+    - boots
+  conflicts:
+    - projectile_protection
+    - fire_protection
+    - protection
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

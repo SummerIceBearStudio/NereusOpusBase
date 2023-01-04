@@ -1,0 +1,27 @@
+enabled: true
+name: Succession
+
+displayName: "迭累"
+description: "一瞬间同时射出多支箭"
+
+maxLevel: 2
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+  conflicts:
+    - tripleshot
+    - pentashot
+    - buckshot
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  amount: level

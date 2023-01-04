@@ -1,0 +1,21 @@
+enabled: true
+name: PermanenceCurse
+
+displayName: "烙印诅咒"
+description: "使物品在铁砧中无法被修改"
+
+maxLevel: 1
+rarity: curse
+grindstoneable: false
+
+limits:
+  targets:
+    - all
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

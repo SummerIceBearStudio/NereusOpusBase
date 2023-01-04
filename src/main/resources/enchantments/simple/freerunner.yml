@@ -1,0 +1,24 @@
+enabled: true
+name: Freerunner
+
+displayName: "轻盈"
+description: "受到摔落伤害时有概率免疫"
+
+maxLevel: 4
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 25*level

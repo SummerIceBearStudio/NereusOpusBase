@@ -1,0 +1,27 @@
+enabled: true
+name: Zeus
+
+displayName: "宙斯"
+description: "攻击时有概率召唤闪电攻击对手"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level
+  damage: 2+level

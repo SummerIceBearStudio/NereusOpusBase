@@ -1,0 +1,27 @@
+enabled: true
+name: Famine
+
+displayName: "啜食"
+description: "在攻击时有概率使对手获得饥饿效果"
+
+maxLevel: 6
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  require-full-charge: true
+  chance: 3*level
+  duration: 40*level
+  amplifier: 0.5+level/2

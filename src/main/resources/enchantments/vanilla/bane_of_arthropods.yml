@@ -1,0 +1,17 @@
+displayName: "节肢杀手"
+description: "增加对节肢动物的伤害"
+rarity: common
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - sharpness
+    - smite
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

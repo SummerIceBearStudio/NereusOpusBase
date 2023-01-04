@@ -1,0 +1,24 @@
+enabled: true
+name: GreenThumb
+
+displayName: "培植"
+description: "左击泥土可将其转换为草方块"
+
+maxLevel: 1
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - hoes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  permission-check: true

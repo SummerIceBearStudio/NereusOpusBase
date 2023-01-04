@@ -1,0 +1,15 @@
+displayName: "无限"
+description: "射箭时不会消耗普通箭矢"
+rarity: epic
+limits:
+  targets:
+    - bow
+  conflicts:
+    - mending
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

@@ -1,0 +1,28 @@
+enabled: true
+name: StoneSwitcher
+
+displayName: "筛选"
+description: "挖掘石头时有概率掉落其他种类的岩石"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+  conflicts:
+    - transfuse
+    - silk_touch
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  drops: andesite,granite,diorite
+  chance: 12.5*level
+  targets: stone,deepslate

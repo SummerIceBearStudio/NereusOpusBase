@@ -1,0 +1,32 @@
+type: ENCHANT_CONFIG
+title: "附魔配置: {enchant}"
+size: 54
+contents:
+  frame_black:
+    item: "BLACK_STAINED_GLASS_PANE;&7;"
+    slots: [ 0,1,2,3,4,5,6,7,8,9,13,17,18,19,20,21,22,23,24,25,26,27,35,36,44,45,46,47,48,50,51,52,53 ]
+  enable:
+    slots: [ 10 ]
+  displayname:
+    slots: [ 11 ]
+  description:
+    slots: [ 12 ]
+  maxlevel:
+    slots: [ 14 ]
+  rarity:
+    slots: [ 15 ]
+  grindstoneable:
+    slots: [ 16 ]
+  params:
+    slots: [ 28,29,30,31,32,33,34 ]
+  values:
+    slots: [ 37,38,39,40,41,42,43 ]
+  previous:
+    item: "GREEN_STAINED_GLASS_PANE;&b左翻;"
+    slots: [ 27 ]
+  next:
+    item: "YELLOW_STAINED_GLASS_PANE;&b右翻;"
+    slots: [ 35 ]
+  back:
+    item: "RED_STAINED_GLASS_PANE;&c返回;"
+    slots: [ 49 ]

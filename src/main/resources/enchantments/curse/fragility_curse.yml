@@ -1,0 +1,25 @@
+enabled: true
+name: FragilityCurse
+
+displayName: "脆弱诅咒"
+description: "使物品被使用时额外扣除耐久度"
+
+maxLevel: 3
+rarity: curse
+grindstoneable: false
+
+limits:
+  targets:
+    - all
+  conflicts:
+    - unbreaking
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  durability-decrease-extra: 2*level

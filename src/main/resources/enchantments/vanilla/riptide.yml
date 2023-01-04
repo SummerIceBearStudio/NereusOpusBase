@@ -1,0 +1,16 @@
+displayName: "激流"
+description: "将玩家向掷出三叉戟的方向发射，仅在水中或雨中生效"
+rarity: uncommon
+limits:
+  targets:
+    - trident
+  conflicts:
+    - loyalty
+    - channeling
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

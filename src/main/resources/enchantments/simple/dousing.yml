@@ -1,0 +1,26 @@
+enabled: true
+name: Dousing
+
+displayName: "熄灭"
+description: "射出的箭矢有概率熄灭落点区域火焰"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts:
+    - ignite
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 25*level

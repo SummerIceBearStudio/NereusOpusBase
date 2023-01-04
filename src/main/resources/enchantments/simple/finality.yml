@@ -1,0 +1,29 @@
+enabled: true
+name: Finality
+
+displayName: "宣读"
+description: "对低血量生物造成伤害时有概率直接将其击杀"
+
+maxLevel: 3
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - swords
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  min-health: 0.1*level*maxBlood
+  #你可以改成:
+  #min-health: 6*level
+  chance: 3*level

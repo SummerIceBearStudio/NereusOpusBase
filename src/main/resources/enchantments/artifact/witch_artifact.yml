@@ -1,0 +1,31 @@
+enabled: true
+name: WitchArtifact
+
+displayName: "§c§o巫术"
+description: "产生巫术粒子"
+
+maxLevel: 1
+rarity: artifact
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+    - swords
+    - axes
+    - elytra
+    - bow
+    - crossbow
+    - trident
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+  
+params:
+  amount: 1

@@ -1,0 +1,28 @@
+enabled: true
+name: Invigoration
+
+displayName: "破釜"
+description: "在低血量时造成的伤害提升并受到的伤害降低"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  min-health: 0.1*level*maxBlood
+  damage-multiplier: 1-0.2*level

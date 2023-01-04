@@ -1,0 +1,29 @@
+enabled: true
+name: Hellish
+
+displayName: "浴火"
+description: "在地狱的造成的伤害提升"
+
+maxLevel: 5
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+    - swords
+    - bow
+    - crossbow
+  conflicts:
+    - void_affinity
+    - end_infusion
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.08*level

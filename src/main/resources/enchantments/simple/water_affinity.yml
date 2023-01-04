@@ -1,0 +1,26 @@
+enabled: true
+name: WaterAffinity
+
+displayName: "湍流"
+description: "在水中造成的伤害提升"
+
+maxLevel: 3
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - trident
+  conflicts:
+    - fire_affinity
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.1*level

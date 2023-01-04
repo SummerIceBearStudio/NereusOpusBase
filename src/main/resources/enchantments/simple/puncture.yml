@@ -1,0 +1,24 @@
+enabled: true
+name: Puncture
+
+displayName: "破甲"
+description: "对壳类生物的伤害提升"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.5*level

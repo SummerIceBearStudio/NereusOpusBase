@@ -1,0 +1,26 @@
+enabled: true
+name: Sycophant
+
+displayName: "守恒"
+description: "转换一部分抵挡的伤害为治疗血量并使盾牌进入冷却期"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - shield
+  conflicts:
+    - deflection
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  percent: 5*level
+  cooldown: 8-level

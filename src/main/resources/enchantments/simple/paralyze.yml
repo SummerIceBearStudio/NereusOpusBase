@@ -1,0 +1,26 @@
+enabled: true
+name: Paralyze
+
+displayName: "麻痹"
+description: "抵挡伤害时有概率使攻击者获得挖掘疲劳效果"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - shield
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level
+  duration: 20*level
+  amplifier: level

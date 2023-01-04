@@ -1,0 +1,25 @@
+enabled: true
+name: Voltage
+
+displayName: "导电"
+description: "对穿着铁、金装备的目标的伤害提升"
+
+maxLevel: 5
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts:
+    - plasmic
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.02*level*amount

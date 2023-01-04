@@ -1,0 +1,29 @@
+enabled: true
+name: Arborist
+
+displayName: "收获"
+description: "从树叶中获得更多木棍、苹果"
+
+maxLevel: 4
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - axes
+    - shears
+  conflicts:
+    - silk_touch
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  items:
+    - stick
+    - apple
+  chance: 5*level

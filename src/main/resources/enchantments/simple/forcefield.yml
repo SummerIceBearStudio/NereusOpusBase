@@ -1,0 +1,29 @@
+enabled: true
+name: Forcefield
+
+displayName: "力场"
+description: "对附近的怪物造成持续伤害，盔甲会自动扣除耐久"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  range: 3*level
+  damage: 2*level
+  repeat-ticks: 20

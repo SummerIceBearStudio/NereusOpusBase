@@ -1,0 +1,27 @@
+enabled: true
+name: Levitate
+
+displayName: "失重"
+description: "在攻击时有概率使对手获得漂浮效果"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level
+  duration: 20*level
+  amplifier: level

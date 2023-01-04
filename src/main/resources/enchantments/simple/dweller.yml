@@ -1,0 +1,25 @@
+enabled: true
+name: Dweller
+
+displayName: "卫戍"
+description: "对灾厄村民的伤害提升"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.5*level

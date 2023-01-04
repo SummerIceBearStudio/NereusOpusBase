@@ -1,0 +1,20 @@
+displayName: "保护"
+description: "减少多数的伤害"
+rarity: uncommon
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts:
+    - projectile_protection
+    - fire_protection
+    - feather_falling
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

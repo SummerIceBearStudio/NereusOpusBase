@@ -1,0 +1,26 @@
+enabled: true
+name: InfernalTouch
+
+displayName: "熔炼"
+description: "自动烧炼挖掘掉落的矿物"
+
+maxLevel: 1
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+  conflicts:
+    - silk_touch
+    - stone_switcher
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  drop-xp: true

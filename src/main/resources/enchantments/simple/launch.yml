@@ -1,0 +1,25 @@
+enabled: true
+name: Launch
+
+displayName: "能源"
+description: "在使用烟花火箭加速时获得的加速度提升"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - elytra
+  conflicts:
+    - kinetic
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  velocity: 1+0.15*level

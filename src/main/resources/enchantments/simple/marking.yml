@@ -1,0 +1,26 @@
+enabled: true
+name: Marking
+
+displayName: "乘势"
+description: "短时间内连续对你的对手的伤害提升"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  duration: 40*level
+  damage-multiplier: 1+0.1*level

@@ -1,0 +1,30 @@
+enabled: true
+name: Charge
+
+displayName: "突袭"
+description: "§e右击§7将自己弹射至所指方向（冷却时间: §a40秒§7）"
+
+maxLevel: 6
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_FIREWORK_ROCKET_LAUNCH
+  cooldown: 40
+  particle:
+    type: SWEEP_ATTACK
+    amount: 2
+
+  power: 0.8*level

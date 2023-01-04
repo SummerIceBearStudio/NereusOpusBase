@@ -1,0 +1,25 @@
+enabled: true
+name: HarmlessnessCurse
+
+displayName: "软弱诅咒"
+description: "使剑或斧的攻击有概率无效"
+
+maxLevel: 3
+rarity: curse
+grindstoneable: false
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 15*level

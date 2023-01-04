@@ -1,0 +1,15 @@
+displayName: "忠诚"
+description: "使掷出后的三叉戟返回，魔咒等级越高，三叉戟返回所需时间越短"
+rarity: rare
+limits:
+  targets:
+    - trident
+  conflicts:
+    - riptide
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

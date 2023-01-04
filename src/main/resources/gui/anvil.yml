@@ -1,0 +1,23 @@
+type: ANVIL
+title: "附魔模拟/操作台"
+size: 27
+contents:
+  frame_black:
+    item: "BLACK_STAINED_GLASS_PANE;&7;"
+    slots: [ 0,1,2,3,4,5,6,7,8,9,15,17,18,19,20,21,22,23,24,25,26 ]
+  first:
+    slots: [ 10 ]
+  plus:
+    slots: [ 11 ]
+    item: "PLAYER_HEAD;&b +;"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdhMGZjNmRjZjczOWMxMWZlY2U0M2NkZDE4NGRlYTc5MWNmNzU3YmY3YmQ5MTUzNmZkYmM5NmZhNDdhY2ZiIn19fQ=="
+  second:
+    slots: [ 12 ]
+  equal:
+    slots: [ 13 ]
+    item: "PLAYER_HEAD;&b =;"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc3MzE1NTMwNmM5ZDJkNThiMTQ5NjczOTUxY2JjNjY2NmFlZjg3YjhmODczNTM4ZmM4NTc0NWYwMWI1MSJ9fX0="
+  third:
+    slots: [ 14 ]
+  forth:
+    slots: [ 16 ]

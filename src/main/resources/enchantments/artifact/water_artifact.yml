@@ -1,0 +1,31 @@
+enabled: true
+name: WaterArtifact
+
+displayName: "§c§o水滴"
+description: "产生滴落的水滴粒子"
+
+maxLevel: 1
+rarity: artifact
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+    - swords
+    - axes
+    - elytra
+    - boots
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+  
+params:
+  amount: 1

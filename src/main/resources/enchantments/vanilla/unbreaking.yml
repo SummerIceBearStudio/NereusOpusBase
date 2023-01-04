@@ -1,0 +1,14 @@
+displayName: "耐久"
+description: "减少物品掉耐久的概率"
+rarity: uncommon
+limits:
+  targets:
+    - all
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

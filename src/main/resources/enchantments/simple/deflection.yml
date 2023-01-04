@@ -1,0 +1,26 @@
+enabled: true
+name: Deflection
+
+displayName: "偏光"
+description: "反弹一部分抵挡的伤害并使盾牌进入冷却期"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - shield
+  conflicts:
+    - sycophant
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  percent: 5*level
+  cooldown: 8-level

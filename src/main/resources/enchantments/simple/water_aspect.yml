@@ -1,0 +1,26 @@
+enabled: true
+name: WaterAspect
+
+displayName: "抽薪"
+description: "对火焰类生物的伤害提升"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - fire_aspect
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.5*level

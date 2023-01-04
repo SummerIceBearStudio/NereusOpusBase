@@ -1,0 +1,24 @@
+enabled: true
+name: Inferno
+
+displayName: "炽戟"
+description: "使投掷的三叉戟伴随火焰"
+
+maxLevel: 1
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  duration: 100

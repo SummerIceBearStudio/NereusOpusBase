@@ -1,0 +1,29 @@
+enabled: true
+name: Disappear
+
+displayName: "脱身"
+description: "在低血量时获得隐身效果"
+
+maxLevel: 6
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  min-health-percent: 0.05*level
+  repeat-ticks: 100
+

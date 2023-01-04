@@ -1,0 +1,29 @@
+enabled: true
+name: Bantering
+
+displayName: "戏谑"
+description: "使得周围生物的伤害吸收总量减少(冷却时间内对于同个生物仅会生效一次)，盔甲会自动扣除耐久"
+
+maxLevel: 6
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  range: 3+level*0.5
+  absorption-multiplier: 1-0.1*level
+  cooldown: 10-level

@@ -1,0 +1,27 @@
+enabled: true
+name: Oxygenate
+
+displayName: "富氧"
+description: "在水中破坏方块时可以获得额外氧气"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+    - axes
+    - shovels
+    - hoes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  oxygen: level

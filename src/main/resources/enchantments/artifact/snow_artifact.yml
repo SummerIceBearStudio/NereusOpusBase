@@ -1,0 +1,31 @@
+enabled: true
+name: SnowArtifact
+
+displayName: "§c§o雪花"
+description: "产生雪花粒子"
+
+maxLevel: 1
+rarity: artifact
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+    - swords
+    - axes
+    - elytra
+    - bow
+    - crossbow
+    - boots
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+  
+params:
+  amount: 1

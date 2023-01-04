@@ -1,0 +1,26 @@
+enabled: true
+name: Supercritical
+
+displayName: "会心"
+description: "在攻击时有概率造成的伤害大幅提升"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.33*level
+  require-full-charge: true
+  chance: 3*level

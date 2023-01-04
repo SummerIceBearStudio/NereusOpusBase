@@ -1,0 +1,31 @@
+enabled: true
+name: WaxArtifact
+
+displayName: "§c§o粉星"
+description: "产生粉星粒子"
+
+maxLevel: 1
+rarity: artifact
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+    - swords
+    - axes
+    - elytra
+    - boots
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+  
+params:
+  amount: 1

@@ -1,0 +1,24 @@
+enabled: true
+name: Fetching
+
+displayName: "灵犀"
+description: "使宠物狼击杀生物的掉落直接进入背包"
+
+maxLevel: 1
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  avaliable-on-players: true

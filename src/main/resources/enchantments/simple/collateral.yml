@@ -1,0 +1,25 @@
+enabled: true
+name: Collateral
+
+displayName: "穿心"
+description: "射出的箭矢伤害降低但能破盾并穿透生物"
+
+maxLevel: 1
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+  conflicts:
+    - cerebral
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 0.5

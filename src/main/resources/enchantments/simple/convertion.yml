@@ -1,0 +1,24 @@
+enabled: true
+name: Convertion
+
+displayName: "转化"
+description: "刷新技能预言的内容"
+
+maxLevel: 3
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - all
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  #技能类

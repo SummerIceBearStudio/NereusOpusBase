@@ -1,0 +1,31 @@
+enabled: true
+name: Vitalize
+
+displayName: "急救"
+description: "§e右击§7将自身生命值恢复至满（冷却时间: §a180秒§7）"
+
+maxLevel: 1
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - pickaxes
+    - shovels
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_PLAYER_LEVELUP
+  cooldown: 180
+  particle:
+    type: HEART
+    amount: 1

@@ -1,0 +1,24 @@
+enabled: true
+name: Reel
+
+displayName: "拉扯"
+description: "拉扯生物的力度提升"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - rod
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  velocity: 0.5*level

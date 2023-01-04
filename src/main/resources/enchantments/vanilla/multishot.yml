@@ -1,0 +1,15 @@
+displayName: "多重射击"
+description: "消耗一支箭以射出三只箭矢"
+rarity: uncommon
+limits:
+  targets:
+    - crossbow
+  conflicts:
+    - piercing
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

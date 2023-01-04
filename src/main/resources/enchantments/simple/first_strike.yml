@@ -1,0 +1,24 @@
+enabled: true
+name: FirstStrike
+
+displayName: "首击"
+description: "对满血生物的伤害提升"
+
+maxLevel: 6
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.05*level

@@ -1,0 +1,14 @@
+displayName: "穿刺"
+description: "对水生生物造成额外伤害"
+rarity: common
+limits:
+  targets:
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

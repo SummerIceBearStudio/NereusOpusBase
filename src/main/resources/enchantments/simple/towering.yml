@@ -1,0 +1,29 @@
+enabled: true
+name: Towering
+
+displayName: "屹立"
+description: "在血量较高时受到伤害增加，在血量较低时受到伤害减少"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  health-judging-line: (0.4+0.05*level)*maxBlood
+  high-damage-multiplier: 1+0.0375*level
+  low-damage-multiplier: 1-0.075*level

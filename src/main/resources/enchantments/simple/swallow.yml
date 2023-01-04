@@ -1,0 +1,28 @@
+enabled: true
+name: Swallow
+
+displayName: "吞噬"
+description: "击杀敌人时回复饱食度"
+
+maxLevel: 3
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  food: level*4

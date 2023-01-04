@@ -1,0 +1,25 @@
+enabled: true
+name: Ignite
+
+displayName: "殃及"
+description: "射出的箭矢有概率点燃落点区域"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 25*level

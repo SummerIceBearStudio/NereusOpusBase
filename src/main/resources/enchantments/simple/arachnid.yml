@@ -1,0 +1,33 @@
+enabled: true
+name: Arachnid
+
+displayName: "剿蛛"
+description: "对蜘蛛的伤害提升"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+    - bow
+  conflicts:
+    - serrated
+    - phantasm
+    - impaling
+    - power
+    - force
+    - slaughter
+    - boss_hunter
+    - cubism
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.5*level

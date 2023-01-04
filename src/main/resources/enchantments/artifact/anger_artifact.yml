@@ -1,0 +1,31 @@
+enabled: true
+name: AngerArtifact
+
+displayName: "§c§o怒火"
+description: "村民愤怒时产生的粒子"
+
+maxLevel: 1
+rarity: artifact
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+    - swords
+    - axes
+    - elytra
+    - bow
+    - crossbow
+    - trident
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  amount: 1

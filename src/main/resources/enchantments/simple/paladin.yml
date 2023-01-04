@@ -1,0 +1,24 @@
+enabled: true
+name: Paladin
+
+displayName: "骑士"
+description: "在骑乘时造成的伤害提升"
+
+maxLevel: 3
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.2*level

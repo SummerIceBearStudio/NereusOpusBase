@@ -1,0 +1,28 @@
+enabled: true
+name: Extract
+
+displayName: "滋润"
+description: "造成伤害时转化一部分为己方恢复血量"
+
+maxLevel: 3
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+    - swords
+    - axes
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  heal: (0.1*level)*damage

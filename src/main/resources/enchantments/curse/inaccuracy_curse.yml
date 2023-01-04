@@ -1,0 +1,24 @@
+enabled: true
+name: InaccuracyCurse
+
+displayName: "火焰诅咒"
+description: "使弓射出的箭将错误地燃烧对象"
+
+maxLevel: 3
+rarity: curse
+grindstoneable: false
+
+limits:
+  targets:
+    - bow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 15*level

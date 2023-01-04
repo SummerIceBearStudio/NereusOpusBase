@@ -1,0 +1,31 @@
+displayName: "消失诅咒"
+description: "被诅咒物品会在玩家死亡时消失"
+rarity: curse
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+    - pickaxes
+    - shovels
+    - hoes
+    - axes
+    - rod
+    - swords
+    - bow
+    - shears
+    - flint_and_steel
+    - carrot_stick
+    - shield
+    - elytra
+    - trident
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

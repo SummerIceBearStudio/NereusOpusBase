@@ -1,0 +1,24 @@
+enabled: true
+name: Hook
+
+displayName: "牵引"
+description: "使钩子的拉扯效果提升"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - rod
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  velocity: 0.5

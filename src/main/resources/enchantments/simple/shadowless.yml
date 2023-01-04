@@ -1,0 +1,29 @@
+enabled: true
+name: Swallow
+
+displayName: "无影"
+description: "击杀将会获得隐身效果"
+
+maxLevel: 3
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  duration: 40*level
+  amplifier: level

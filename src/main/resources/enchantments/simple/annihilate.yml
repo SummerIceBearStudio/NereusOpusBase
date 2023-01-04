@@ -1,0 +1,28 @@
+enabled: true
+name: Annihilate
+
+displayName: "威慑"
+description: "攻击时产生强力击退效果"
+
+maxLevel: 2
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - knockback
+    - tornado
+    - grapple
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  velocity: level*2.5

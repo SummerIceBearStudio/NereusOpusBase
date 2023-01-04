@@ -1,0 +1,25 @@
+enabled: true
+name: Electroshock
+
+displayName: "天雷"
+description: "格挡攻击时有概率雷击你的对手"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - shield
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level
+  damage: 3+level

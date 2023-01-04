@@ -1,0 +1,31 @@
+enabled: true
+name: SparkleArtifact
+
+displayName: "§c§o烟花"
+description: "产生烟火粒子"
+
+maxLevel: 1
+rarity: artifact
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+    - swords
+    - axes
+    - elytra
+    - bow
+    - crossbow
+    - boots
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+  
+params:
+  amount: 1

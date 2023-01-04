@@ -1,0 +1,28 @@
+enabled: true
+name: Lesion
+
+displayName: "膏肓"
+description: "在攻击时有概率使对手持续流血"
+
+maxLevel: 6
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  require-full-charge: true
+  chance: 3*level
+  damage: 0.5*level
+  duration: 20*level
+  repeat-ticks: 20

@@ -1,0 +1,26 @@
+enabled: true
+name: Defender
+
+displayName: "明辨"
+description: "防止伤害自己的宠物"
+
+maxLevel: 1
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params: [ ]

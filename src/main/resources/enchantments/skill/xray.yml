@@ -1,0 +1,63 @@
+enabled: true
+name: Xray
+
+displayName: "慧眼"
+description: "§e右击§7可高亮周围的矿物（冷却时间: §a360秒§7）"
+
+maxLevel: 3
+rarity: unknown
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+  conflicts:
+    - blast_mining
+  neededEnchants: [ ]
+  withLORE: [ ]
+  withoutLORE: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  cooldown: 360
+  particle:
+    type: TOTEM
+    amount: 2
+
+  blocks:
+    #MD5 ChatColor 16种颜色中的一种，大写
+    #然后是方块ID
+    BLACK:
+      - COAL_ORE
+      - DEEPSLATE_COAL_ORE
+    GRAY:
+      - IRON_ORE
+      - DEEPSLATE_IRON_ORE
+    GOLD:
+      - COPPER_ORE
+      - DEEPSLATE_COPPER_ORE
+    YELLOW:
+      - GOLD_ORE
+      - NETHER_GOLD_ORE
+      - DEEPSLATE_GOLD_ORE
+    RED:
+      - REDSTONE_ORE
+      - DEEPSLATE_REDSTONE_ORE
+    BLUE:
+      - LAPIS_ORE
+      - DEEPSLATE_LAPIS_ORE
+    DARK_RED:
+      - ANCIENT_DEBRIS
+    AQUA:
+      - DIAMOND_ORE
+      - DEEPSLATE_DIAMOND_ORE
+    GREEN:
+      - EMERALD_ORE
+      - DEEPSLATE_EMERALD_ORE
+  range: 4+level*2
+  duration: 200+level*200
+  colored: true

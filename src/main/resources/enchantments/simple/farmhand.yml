@@ -1,0 +1,26 @@
+enabled: true
+name: Farmhand
+
+displayName: "耕作"
+description: "一次可对一大批区域进行耕地操作"
+
+maxLevel: 2
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - hoes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  disable-on-sneak: true
+  permission-check: true
+  range: 1+level

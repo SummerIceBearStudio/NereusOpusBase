@@ -1,0 +1,26 @@
+enabled: true
+name: EndInfusion
+
+displayName: "尽头"
+description: "在末地造成的伤害提升"
+
+maxLevel: 5
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.08*level

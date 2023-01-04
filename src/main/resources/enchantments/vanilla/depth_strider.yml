@@ -1,0 +1,16 @@
+displayName: "深海探索者"
+description: "增加水下行走速度"
+rarity: rare
+limits:
+  targets:
+    - boots
+  conflicts:
+    - soul_speed
+    - frost_walker
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

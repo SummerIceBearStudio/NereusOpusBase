@@ -1,0 +1,24 @@
+enabled: true
+name: LuckyCatch
+
+displayName: "惊喜"
+description: "在收钩时有概率一钩双鱼"
+
+maxLevel: 2
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - rod
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 25*level

@@ -1,0 +1,14 @@
+displayName: "火矢"
+description: "使射出的箭矢使目标着火"
+rarity: rare
+limits:
+  targets:
+    - bow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

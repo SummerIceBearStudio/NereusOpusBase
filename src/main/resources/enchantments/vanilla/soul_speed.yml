@@ -1,0 +1,16 @@
+displayName: "灵魂疾行"
+description: "增加玩家在灵魂沙和灵魂土上的移动速度"
+rarity: uncommon
+limits:
+  targets:
+    - boots
+  conflicts:
+    - frost_walker
+    - depth_strider
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

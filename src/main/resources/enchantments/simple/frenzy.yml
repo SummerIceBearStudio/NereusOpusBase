@@ -1,0 +1,25 @@
+enabled: true
+name: Frenzy
+
+displayName: "激励"
+description: "击杀生物后获得力量效果"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  duration: 40*level
+  amplifier: level

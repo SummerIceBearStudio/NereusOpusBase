@@ -1,0 +1,25 @@
+enabled: true
+name: Dexterous
+
+displayName: "瞬息"
+description: "攻击速度提升"
+
+maxLevel: 2
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  cooldown-decreased: 10*level

@@ -1,0 +1,26 @@
+enabled: true
+name: Accumulation
+
+displayName: "蓄力"
+description: "长时间不攻击状态下伤害提升"
+
+maxLevel: 8
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+level*0.05
+  duration: 160-10*level

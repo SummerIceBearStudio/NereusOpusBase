@@ -1,0 +1,31 @@
+enabled: true
+name: Missile
+
+displayName: "咒怨"
+description: "§e右击§7发射一颗凋零骷髅头（冷却时间: §a60秒§7）"
+
+maxLevel: 3
+rarity: unknown
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_WITHER_SHOOT
+  cooldown: 60
+  particle:
+    type: VILLAGER_ANGRY
+    amount: 1
+
+  velocity: 1.5+0.5*level

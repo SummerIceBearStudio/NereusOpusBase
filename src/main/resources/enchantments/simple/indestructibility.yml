@@ -1,0 +1,25 @@
+enabled: true
+name: Indestructibility
+
+displayName: "重铸"
+description: "其物品耐久得到大幅度提升"
+
+maxLevel: 3
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - all
+  conflicts:
+    - unbreaking
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 20*level

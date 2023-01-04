@@ -1,0 +1,26 @@
+enabled: true
+name: Tectonic
+
+displayName: "余震"
+description: "受到摔落伤害时对周围的生物造成伤害"
+
+maxLevel: 2
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - boots
+  conflicts:
+    - feather_falling
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  range: 2*level
+  damage-splash: 2*level

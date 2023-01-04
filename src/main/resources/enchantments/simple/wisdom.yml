@@ -1,0 +1,32 @@
+enabled: true
+name: Wisdom
+
+displayName: "智识"
+description: "掉落的经验量提升"
+
+maxLevel: 2
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - pickaxes
+    - shovels
+    - hoes
+    - bow
+    - crossbow
+    - trident
+  conflicts:
+    - splash
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  exp-multiplier: 1+0.25*level

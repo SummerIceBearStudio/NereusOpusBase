@@ -1,0 +1,34 @@
+enabled: true
+name: Catnap
+
+displayName: "假寐"
+description: "§e右击§7蛊惑范围内最近的玩家，使其失明（冷却时间: §a600秒§7）"
+
+maxLevel: 3
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLORE: [ ]
+  withoutLORE: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  cooldown: 360
+  particle:
+    type: CRIT
+    amount: 2
+  duration: 200+level*20
+  range: 4+2*level

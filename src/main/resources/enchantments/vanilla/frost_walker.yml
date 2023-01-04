@@ -1,0 +1,16 @@
+displayName: "冰霜行者"
+description: "使在水上行走过的地方结冰"
+rarity: rare
+limits:
+  targets:
+    - boots
+  conflicts:
+    - soul_speed
+    - depth_strider
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

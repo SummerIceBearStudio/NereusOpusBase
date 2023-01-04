@@ -1,0 +1,31 @@
+enabled: true
+name: Preservation
+
+displayName: "捍卫"
+description: "受到的伤害大幅降低"
+
+maxLevel: 4
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts:
+    - protection
+    - fire_protection
+    - projectile_protection
+    - blast_protection
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1-0.04*level

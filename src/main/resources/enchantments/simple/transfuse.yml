@@ -1,0 +1,28 @@
+enabled: true
+name: Transfuse
+
+displayName: "洗炼"
+description: "在挖掘石头时有概率掉落随机矿物"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+  conflicts:
+    - stone_switcher
+    - silk_touch
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  drops: diamond_ore,gold_ore,lapis_ore,redstone_ore,iron_ore
+  chance: 0.5*level
+  targets: stone,deepslate

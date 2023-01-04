@@ -1,0 +1,30 @@
+enabled: true
+name: Carve
+
+displayName: "破军"
+description: "暴击时提升伤害并溅射至周围实体"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - axes
+  conflicts:
+    - cleave
+    - criticals
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.05*level
+  damage-splash-multiplier: 10*level
+  range: 0.5*level
+  require-full-charge: true
+

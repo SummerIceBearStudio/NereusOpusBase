@@ -1,0 +1,29 @@
+enabled: true
+name: Irrigate
+
+displayName: "浇灌"
+description: "§e右击§7使得目标可生长方块立刻生长（冷却时间: §a240秒§7）"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - hoes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLORE: [ ]
+  withoutLORE: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  cooldown: 240
+  particle:
+    type: VILLAGER_HAPPY
+    amount: 2
+  duration: 200-level*20

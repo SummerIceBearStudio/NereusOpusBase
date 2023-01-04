@@ -1,0 +1,18 @@
+displayName: "效率"
+description: "加快挖掘速度"
+rarity: uncommon
+limits:
+  targets:
+    - shears
+    - axes
+    - pickaxes
+    - hoes
+    - shovels
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
