@@ -1,0 +1,15 @@
+displayName: "穿透"
+description: "使箭矢穿过多个实体"
+rarity: uncommon
+limits:
+  targets:
+    - crossbow
+  conflicts:
+    - multishot
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

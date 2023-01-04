@@ -1,4 +1,30 @@
-name: Name
+name: NereusOpus
+main: hamsteryds.nereusopus.NereusOpus
 version: 3.0.0
-main: put.your.code.here.Main
+
+author:
+  - 白熊
+  - TwiShimmer
+  - IceAge666
+  - 关怀他人
+  - 小张up
 api-version: 1.18
+
+depend:
+  - PlaceholderAPI
+  - ProtocolLib
+softdepend:
+  - Citizens
+  - InteractionVisualizer
+
+loadbefore:
+  - CrazyAuctionsPlus
+  - QuickShop
+  - GlobalShop
+  - ExcellentCrates
+  - Shopkeepers
+  - QuickShop-Hikari
+  - AuctionHouse
+
+commands:
+  nereusopus:

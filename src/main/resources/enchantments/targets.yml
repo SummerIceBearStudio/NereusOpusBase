@@ -1,0 +1,263 @@
+swords:
+  limits: 12
+  name: 剑
+  slots:
+    - HAND
+  types:
+    - DIAMOND_SWORD
+    - GOLDEN_SWORD
+    - IRON_SWORD
+    - STONE_SWORD
+    - WOODEN_SWORD
+    - NETHERITE_SWORD
+axes:
+  limits: 12
+  name: 斧
+  slots:
+    - HAND
+  types:
+    - DIAMOND_AXE
+    - GOLDEN_AXE
+    - IRON_AXE
+    - STONE_AXE
+    - WOODEN_AXE
+    - NETHERITE_AXE
+pickaxes:
+  limits: 7
+  name: 镐
+  slots:
+    - HAND
+  types:
+    - DIAMOND_PICKAXE
+    - GOLDEN_PICKAXE
+    - IRON_PICKAXE
+    - STONE_PICKAXE
+    - WOODEN_PICKAXE
+    - NETHERITE_PICKAXE
+shovels:
+  limits: 6
+  name: 铲
+  slots:
+    - HAND
+  types:
+    - DIAMOND_SHOVEL
+    - GOLDEN_SHOVEL
+    - IRON_SHOVEL
+    - STONE_SHOVEL
+    - WOODEN_SHOVEL
+    - NETHERITE_SHOVEL
+hoes:
+  limits: 6
+  name: 锄
+  slots:
+    - HAND
+  types:
+    - DIAMOND_HOE
+    - GOLDEN_HOE
+    - IRON_HOE
+    - STONE_HOE
+    - WOODEN_HOE
+    - NETHERITE_HOE
+bow:
+  limits: 12
+  name: 弓
+  slots:
+    - HAND
+  types:
+    - BOW
+crossbow:
+  limits: 8
+  name: 弩
+  slots:
+    - HAND
+  types:
+    - CROSSBOW
+trident:
+  limits: 8
+  name: 三叉戟
+  slots:
+    - HAND
+  types:
+    - TRIDENT
+helmets:
+  limits: 8
+  name: 头盔
+  slots:
+    - HEAD
+  types:
+    - DIAMOND_HELMET
+    - GOLDEN_HELMET
+    - IRON_HELMET
+    - LEATHER_HELMET
+    - NETHERITE_HELMET
+    - CHAINMAIL_HELMET
+    - TURTLE_HELMET
+chestplates:
+  limits: 8
+  name: 胸甲
+  slots:
+    - CHEST
+  types:
+    - DIAMOND_CHESTPLATE
+    - GOLDEN_CHESTPLATE
+    - IRON_CHESTPLATE
+    - LEATHER_CHESTPLATE
+    - NETHERITE_CHESTPLATE
+    - CHAINMAIL_CHESTPLATE
+leggings:
+  limits: 8
+  name: 护腿
+  slots:
+    - LEGS
+  types:
+    - DIAMOND_LEGGINGS
+    - GOLDEN_LEGGINGS
+    - IRON_LEGGINGS
+    - LEATHER_LEGGINGS
+    - NETHERITE_LEGGINGS
+    - CHAINMAIL_LEGGINGS
+boots:
+  limits: 8
+  name: 靴子
+  slots:
+    - FEET
+  types:
+    - DIAMOND_BOOTS
+    - GOLDEN_BOOTS
+    - IRON_BOOTS
+    - LEATHER_BOOTS
+    - NETHERITE_BOOTS
+    - CHAINMAIL_BOOTS
+elytra:
+  limits: 6
+  name: 鞘翅
+  slots:
+    - CHEST
+  types:
+    - ELYTRA
+shears:
+  limits: 3
+  name: 剪刀
+  slots: HANDS
+  types:
+    - SHEARS
+shield:
+  limits: 6
+  name: 盾牌
+  slots:
+    - HAND
+  types:
+    - SHIELD
+rod:
+  limits: 7
+  name: 钓鱼竿
+  slots:
+    - HAND
+  types:
+    - FISHING_ROD
+flint_and_steel:
+  limits: 3
+  name: 打火石
+  slots:
+    - HAND
+  types:
+    - FLINT_AND_STEEL
+carrot_stick:
+  limits: 3
+  name: 萝卜钓竿
+  slots:
+    - HAND
+  types:
+    - CARROT_ON_A_STICK
+headable:
+  limits: 3
+  name: 头饰
+  slots:
+    - HEAD
+  types:
+    - PLAYER_HEAD
+    - CARVED_PUMPKIN
+    - CREEPER_HEAD
+    - ZOMBIE_HEAD
+    - SKELETON_SKULL
+    - WITHER_SKELETON_SKULL
+all:
+  limits: 16
+  name: 所有物品
+  slots:
+    - HAND
+    - HEAD
+    - CHEST
+    - LEGS
+    - FEET
+  types:
+    - PLAYER_HEAD
+    - CARVED_PUMPKIN
+    - CREEPER_HEAD
+    - ZOMBIE_HEAD
+    - SKELETON_SKULL
+    - WITHER_SKELETON_SKULL
+    - CARROT_ON_A_STICK
+    - FLINT_AND_STEEL
+    - FISHING_ROD
+    - SHIELD
+    - SHEARS
+    - ELYTRA
+    - DIAMOND_BOOTS
+    - GOLDEN_BOOTS
+    - IRON_BOOTS
+    - LEATHER_BOOTS
+    - NETHERITE_BOOTS
+    - CHAINMAIL_BOOTS
+    - DIAMOND_LEGGINGS
+    - GOLDEN_LEGGINGS
+    - IRON_LEGGINGS
+    - LEATHER_LEGGINGS
+    - NETHERITE_LEGGINGS
+    - CHAINMAIL_LEGGINGS
+    - DIAMOND_CHESTPLATE
+    - GOLDEN_CHESTPLATE
+    - IRON_CHESTPLATE
+    - LEATHER_CHESTPLATE
+    - NETHERITE_CHESTPLATE
+    - CHAINMAIL_CHESTPLATE
+    - DIAMOND_HELMET
+    - GOLDEN_HELMET
+    - IRON_HELMET
+    - LEATHER_HELMET
+    - NETHERITE_HELMET
+    - CHAINMAIL_HELMET
+    - TURTLE_HELMET
+    - TRIDENT
+    - CROSSBOW
+    - BOW
+    - DIAMOND_HOE
+    - GOLDEN_HOE
+    - IRON_HOE
+    - STONE_HOE
+    - WOODEN_HOE
+    - NETHERITE_HOE
+    - DIAMOND_SHOVEL
+    - GOLDEN_SHOVEL
+    - IRON_SHOVEL
+    - STONE_SHOVEL
+    - WOODEN_SHOVEL
+    - NETHERITE_SHOVEL
+    - DIAMOND_PICKAXE
+    - GOLDEN_PICKAXE
+    - IRON_PICKAXE
+    - STONE_PICKAXE
+    - WOODEN_PICKAXE
+    - NETHERITE_PICKAXE
+    - DIAMOND_AXE
+    - GOLDEN_AXE
+    - IRON_AXE
+    - STONE_AXE
+    - WOODEN_AXE
+    - NETHERITE_AXE
+    - DIAMOND_SWORD
+    - GOLDEN_SWORD
+    - IRON_SWORD
+    - STONE_SWORD
+    - WOODEN_SWORD
+    - NETHERITE_SWORD

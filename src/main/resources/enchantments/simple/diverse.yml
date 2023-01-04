@@ -1,0 +1,24 @@
+enabled: true
+name: Diverse
+
+displayName: "克剑"
+description: "对持剑生物的伤害提升"
+
+maxLevel: 6
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.05*level

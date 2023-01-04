@@ -1,0 +1,130 @@
+language: "zh-cn.yml"
+
+gui:
+  choose: false
+  customize:
+    anvil: false
+    grindstone: false
+
+fixers:
+  bloodfixer: false
+  speedfixer: false
+  villager:
+    enabletradewithenchants: false
+    display:
+      ingredients: true
+      result: false
+
+updater:
+  old: false #从2.1.0之前的版本（不包含2.1.0）转入数据
+  enable: true #是否启用平衡性自动更新的功能
+  contents: #附魔平衡性+语言修正调整自动获取官方最新
+    - "displayName"
+    - "description"
+    - "maxLevel"
+    - "rarity"
+    - "grindstoneable"
+    - "limits.targets"
+    - "limits.conflicts"
+    - "params"
+  levelfixers:
+    enable: false #是否打开全局超出最大等级的附魔修正功能
+    vanilla: false #是否修正原版附魔
+    custom: false #是否修正自定义附魔
+    whitelist: #不进行修正的附魔的名字或者ID
+      - example
+
+default:
+  rarity: common
+  type: simple
+
+enchantingtable:
+  amount: [ 0.6,0.35,0.1 ]
+  level:
+    stdformula: "(bonus+1)/17*(maxLevel-1)+1"
+    extraformula: "1/amount"
+    minusformula: "1-1/amount"
+  celebrate:
+    - "epic:message@s"
+    - "legendary:message@a,title@s"
+    - "unknown:message@a,title@a"
+  rate:
+    - "nereusopus.tablerate.110:1.1"
+    - "nereusopus.tablerate.120:1.2"
+    - "nereusopus.tablerate.130:1.3"
+    - "nereusopus.tablerate.150:1.5"
+  leastbonus:
+    enable: false
+    rarities:
+      legendary:
+        amount: 500
+        recalculate: true
+
+anvil:
+  blacklist:
+    - BUCKET
+  limit:
+    unsafelevel: true
+    combineunsafe: false
+    extralore: "§8| §7附魔词条扩充: §e{num}条"
+  rework:
+    max: 100
+    rename: 1
+    repair: 5
+    enchant:
+      new: 2
+      eachlevel: "8/maxlevel+1"
+
+display:
+  levelorder: true
+  rarityorder:
+    - common
+    - uncommon
+    - rare
+    - epic
+    - legendary
+    - unknown
+    - curse
+  format: "{displayname} {roman}/n  §8{description}"
+  combine:
+    format: "{displayname} {roman}"
+    layout: "{1}, {2}"
+    enable: false
+    least: 8
+    amount: 2
+
+limitcheck:
+  use:
+    - PERMISSION
+    - PAPI
+    - TARGET
+    - SLOT
+  attain_item:
+    - PERMISSION
+    - TARGET
+    - NEEDED_NAME
+    - DENIED_NAME
+    - NEEDED_LORE
+    - DENIED_LORE
+    - NEEDED_ENCHANT
+    - DENIED_ENCHANT
+  attain_book:
+    - PERMISSION
+    - DENIED_ENCHANT
+  anvil:
+    - TARGET
+    - NEEDED_NAME
+    - DENIED_NAME
+    - NEEDED_LORE
+    - DENIED_LORE
+    - NEEDED_ENCHANT
+    - DENIED_ENCHANT
+    - LIMIT
+
+save:
+  save_to_pdc: false
+
+debug:
+  enable: false
+  players:
+    - HamsterYDS

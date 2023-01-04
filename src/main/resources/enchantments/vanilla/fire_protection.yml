@@ -1,0 +1,20 @@
+displayName: "火焰保护"
+description: "减少火焰伤害"
+rarity: uncommon
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts:
+    - projectile_protection
+    - feather_falling
+    - protection
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

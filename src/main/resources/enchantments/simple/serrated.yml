@@ -1,0 +1,27 @@
+enabled: true
+name: Serrated
+
+displayName: "锯齿"
+description: "三叉戟造成的伤害提升"
+
+maxLevel: 3
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+  conflicts:
+    - phantasm
+    - arachnid
+    - impaling
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.1*level

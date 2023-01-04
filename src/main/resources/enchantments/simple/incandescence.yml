@@ -1,0 +1,28 @@
+enabled: true
+name: Incandescence
+
+displayName: "白热"
+description: "受到攻击时有概率使攻击者着火"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 10*level
+  duration: 60*level

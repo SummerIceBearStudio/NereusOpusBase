@@ -1,0 +1,28 @@
+enabled: true
+name: Buckshot
+
+displayName: "火力"
+description: "同时射出多支分散箭矢"
+
+maxLevel: 2
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+  conflicts:
+    - succession
+    - pentashot
+    - tripleshot
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  amount: 2*level
+  spread: 0.2

@@ -1,0 +1,30 @@
+enabled: true
+name: Ascend
+
+displayName: "腾空"
+description: "§e右击§7将自己向上弹射（冷却时间: §a90秒§7）"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_FIREWORK_ROCKET_LARGE_BLAST
+  cooldown: 90
+  particle:
+    type: SLIME
+    amount: 5
+
+  power: 25

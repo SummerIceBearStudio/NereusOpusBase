@@ -1,0 +1,24 @@
+enabled: true
+name: Coordination
+
+displayName: "统筹"
+description: "下一次铁砧操作经验折半"
+
+maxLevel: 2
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - all
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  level_multiplier: 1-0.4*level

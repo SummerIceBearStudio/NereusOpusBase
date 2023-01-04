@@ -1,0 +1,16 @@
+displayName: "绑定诅咒"
+description: "被诅咒物品穿在身上后无法卸下"
+rarity: curse
+limits:
+  targets:
+    - helmets
+    - elytra
+    - headable
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

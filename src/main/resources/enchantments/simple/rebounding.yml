@@ -1,0 +1,27 @@
+enabled: true
+name: Rebounding
+
+displayName: "反弹"
+description: "在受到伤害时对攻击者施加击退效果"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  velocity: 0.5*level

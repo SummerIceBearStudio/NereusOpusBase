@@ -1,0 +1,14 @@
+displayName: "力量"
+description: "为弓射出的箭增加伤害"
+rarity: common
+limits:
+  targets:
+    - bow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

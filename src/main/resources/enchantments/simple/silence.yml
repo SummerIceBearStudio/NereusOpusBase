@@ -1,0 +1,28 @@
+enabled: true
+name: Silence
+
+displayName: "沉默"
+description: "受到攻击时有概率使对手在一段时间内无法使用主动技能类附魔"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 15*level
+  duration: level*100

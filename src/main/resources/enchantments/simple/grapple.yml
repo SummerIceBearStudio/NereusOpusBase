@@ -1,0 +1,28 @@
+enabled: true
+name: Grapple
+
+displayName: "迫近"
+description: "在攻击时将对手拉近"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - knockback
+    - tornado
+    - annihilate
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  velocity: 0.5*level

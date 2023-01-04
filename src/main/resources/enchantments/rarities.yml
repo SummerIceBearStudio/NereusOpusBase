@@ -1,0 +1,96 @@
+common:
+  displayName: "普通"
+  colorFormat: "§7"
+  weight: 500
+  accessibleFromTable: true
+  accessibleFromLoot: true
+  accessibleFromVillager: true
+  display:
+    enable: true
+    order: 1
+    item: "PLAYER_HEAD;§7普通;§8| §7点击打开该品质的附魔大全"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RjOTg1YTdhNjhjNTc0ZjY4M2MwYjg1OTUyMWZlYjNmYzNkMmZmYTA1ZmEwOWRiMGJhZTQ0YjhhYzI5YjM4NSJ9fX0="
+uncommon:
+  displayName: "罕见"
+  colorFormat: "§a"
+  weight: 250
+  accessibleFromTable: true
+  accessibleFromLoot: true
+  accessibleFromVillager: true
+  display:
+    enable: true
+    order: 2
+    item: "PLAYER_HEAD;§a罕见;§8| §7点击打开该品质的附魔大全"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMwMzBjYzM1ZmRlMDIxOGRlZDViYTVkNTU3Y2NhOWUwM2RjYmM4NGY5ZTY3MjkxMWRhNTRmZTA3YzVmZGJiYiJ9fX0="
+rare:
+  displayName: "精良"
+  colorFormat: "§b"
+  weight: 125
+  accessibleFromTable: true
+  accessibleFromLoot: true
+  accessibleFromVillager: true
+  display:
+    enable: true
+    order: 3
+    item: "PLAYER_HEAD;§b精良;§8| §7点击打开该品质的附魔大全"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJlMmJhZjQwZmQ4NWViNTczZmU1YjJlNWI2Yzg4MTdjZjUwZjg4M2Q5NTc2OTQxNTgwN2FiMDcyODhhNDdjZCJ9fX0="
+epic:
+  displayName: "史诗"
+  colorFormat: "§d"
+  weight: 25
+  accessibleFromTable: true
+  accessibleFromLoot: true
+  accessibleFromVillager: true
+  display:
+    enable: true
+    order: 4
+    item: "PLAYER_HEAD;§d史诗;§8| §7点击打开该品质的附魔大全"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJlYTg1Yzg1ZmUwNDg0YWY2YzgxNWVmYjY1NWQyYjIxZTEwOTg2M2M5NjMzM2I5MjgwYjU5YjgwZDZhYzk4ZiJ9fX0="
+legendary:
+  displayName: "传奇"
+  colorFormat: "§6"
+  weight: 5
+  accessibleFromTable: true
+  accessibleFromLoot: true
+  accessibleFromVillager: true
+  display:
+    enable: true
+    order: 5
+    item: "PLAYER_HEAD;§6传奇;§8| §7点击打开该品质的附魔大全"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY1MDViMWJlZmJhMjQyMTcwYTQ2ZTg5NDdiNTJhZWE1NGE1OTA2MGYzZTFjMzZmMjFjZWJiNDQ2OTBmOGIwYyJ9fX0="
+unknown:
+  displayName: "稀世"
+  colorFormat: "§e"
+  weight: 1
+  accessibleFromTable: true
+  accessibleFromLoot: true
+  accessibleFromVillager: true
+  display:
+    enable: true
+    order: 6
+    item: "PLAYER_HEAD;§e稀世;§8| §7点击打开该品质的附魔大全"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNhNjljM2NhYTMxMzA0ZTk5NTIzMjhjNzJjZWUwYjU3YjJhMmJkNDZjZTljNWNiODhjMDdkMTI2NjI3N2Q2YSJ9fX0="
+curse:
+  displayName: "诅咒"
+  colorFormat: "§c"
+  weight: 25
+  accessibleFromTable: true
+  accessibleFromLoot: true
+  accessibleFromVillager: true
+  display:
+    enable: true
+    order: 7
+    item: "PLAYER_HEAD;§c诅咒;§8| §7点击打开该品质的附魔大全"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGVkNjc5OTE0OTc4OGI5ZTkwMTY4MTFkM2EzZDBlZDFmNTUyNTMwZDY3Zjk4Njk0NTAzMmQ2ZTQzOWZhODk5ZCJ9fX0="
+artifact:
+  displayName: "皮肤"
+  colorFormat: "§7"
+  weight: 1
+  accessibleFromTable: true
+  accessibleFromLoot: true
+  accessibleFromVillager: true
+  display:
+    enable: true
+    order: 8
+    item: "PLAYER_HEAD;§7皮肤;§8| §7点击打开该品质的附魔大全"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RjOTg1YTdhNjhjNTc0ZjY4M2MwYjg1OTUyMWZlYjNmYzNkMmZmYTA1ZmEwOWRiMGJhZTQ0YjhhYzI5YjM4NSJ9fX0="

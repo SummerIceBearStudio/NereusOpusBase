@@ -1,0 +1,34 @@
+enabled: true
+name: StandAndFight
+
+displayName: "背水"
+description: "§e右击§7扣除一半当前血量，并获得速度与力量效果（冷却时间: §a360秒§7）"
+
+maxLevel: 5
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLORE: [ ]
+  withoutLORE: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  cooldown: 360
+  particle:
+    type: FLAME
+    amount: 2
+  duration: 200+level*40
+  amplifier: 3

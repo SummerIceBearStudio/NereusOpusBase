@@ -1,0 +1,27 @@
+enabled: true
+name: Thrive
+
+displayName: "旺盛"
+description: "最大生命值提升"
+
+maxLevel: 2
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  max-health-increase: 2*level

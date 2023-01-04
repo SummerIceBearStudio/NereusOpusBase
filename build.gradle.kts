@@ -29,6 +29,10 @@ java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
-group = "NULL" /*自行修改谢谢*/
+group = "com.github.summericebearstudio"
 version = "3.0.0"
 description = "NereusOpusBase"
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

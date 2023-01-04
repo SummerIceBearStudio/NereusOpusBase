@@ -1,0 +1,27 @@
+enabled: true
+name: Rejuvenation
+
+displayName: "自愈"
+description: "自然回血速度与回血量提升"
+
+maxLevel: 2
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  heal-multiplier: 1+0.25*level

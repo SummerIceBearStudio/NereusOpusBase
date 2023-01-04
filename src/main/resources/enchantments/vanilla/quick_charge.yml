@@ -1,0 +1,14 @@
+displayName: "快速装填"
+description: "减少弩的填装时间"
+rarity: uncommon
+limits:
+  targets:
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

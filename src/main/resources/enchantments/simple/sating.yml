@@ -1,0 +1,24 @@
+enabled: true
+name: Sating
+
+displayName: "节食"
+description: "饱食损失速度降低"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 12.5*level

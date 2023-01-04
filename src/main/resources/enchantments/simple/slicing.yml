@@ -1,0 +1,25 @@
+enabled: true
+name: Slicing
+
+displayName: "刀鞘"
+description: "飞行时每秒对周围生物造成一定伤害"
+
+maxLevel: 4
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - elytra
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-splash: level
+  range: 0.5*level

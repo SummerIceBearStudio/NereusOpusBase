@@ -1,0 +1,14 @@
+displayName: "抢夺"
+description: "增加生物掉落物的数量或概率"
+rarity: epic
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

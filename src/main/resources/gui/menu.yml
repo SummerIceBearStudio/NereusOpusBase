@@ -1,0 +1,26 @@
+type: MAIN_MENU
+title: "NereusOpus附魔系统指导"
+size: 54
+contents:
+  frame_black:
+    item: "BLACK_STAINED_GLASS_PANE;&7;"
+    slots: [ 0,1,2,3,4,5,6,7,8,9,11,17,18,20,26,27,28,29,30,31,32,33,34,35,36,38,44,45,46,47,48,49,50,51,52,53 ]
+  introduction:
+    item: "ENCHANTING_TABLE;&b附魔介绍;&8| &7点击分类查看对应的附魔,&8| §e右侧 &7→ 附魔稀有度分类,&8| &e右下侧 &7→ 附魔属性分类,&8| &e下侧 &7→ 附魔铁砧试验台,&8| &e本按钮 &7→ 查询某一个物品上的所有附魔"
+    slots: [ 10 ]
+  enchant_search:
+    item: "LECTERN;&b搜索附魔;&8| &7点击输入关键词,&8| &7将会自动搜索名字和描述,&8| &7包含关键词的附魔"
+    slots: [ 19 ]
+  anvil_check:
+    item: "ANVIL;&b附魔铁砧试验台;&8| &7查询两个物品是否能在铁砧内拼合,&8| &7并显示无法拼合的原因"
+    slots: [ 37 ]
+  attribute:
+    slots: [ 12,13,14,15,16,21,22,23,24,25 ]
+  type:
+    data:
+      - "vanilla:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2U4NjkzZjFjYmY1YjA3YTQ1N2Y5NTg5NGUyNTJjY2FhNDlhZjkyNjE4OGE0NTJlODE0MzcxMjg0OGE4MWYwYSJ9fX0="
+      - "simple:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmYzJiODZmZjJlMTcwOTkzYTM3ZjMxY2M3YmY1NTZmMGVkYzM0Yjc0MjBjMDRmYThlOTE0NDc0NzQ5OGYwMCJ9fX0="
+      - "artifact:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWMwNmUwYjFlNzhmNmU2OTcwZTczOTM2MzliYTFhZTA1ODJhOWUzZjA5Njk0MzE2MDQ4NTNkYjkwNWYzYjgxIn19fQ=="
+      - "skill:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjUyODQ4ZDk5NWU0ZTQwMTRlZjZiNTQwYTA0YjAzODkxNjBmNWMxNmJiZWMyZjY0ZGVlMWFlYjU3ZjkzZmM2MSJ9fX0="
+      - "curse:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2EyNTA4NTAwNjlmNDcyOTAzOGNkMzk5OTYxNmI4NmE3NGUyNzVhNDUyODUxOTJlMDU2ZGQ4MTMyMTc5Mzg0YSJ9fX0="
+    slots: [ 39,40,41,42,43 ]

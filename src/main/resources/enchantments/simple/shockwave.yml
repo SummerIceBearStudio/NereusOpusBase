@@ -1,0 +1,25 @@
+enabled: true
+name: Shockwave
+
+displayName: "共振"
+description: "射出的箭矢飞行时伤害轨迹附近的生物"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-splash: level
+  range: 0.5*level

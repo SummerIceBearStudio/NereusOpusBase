@@ -1,0 +1,14 @@
+displayName: "饵钓"
+description: "减少钓鱼所需的时间"
+rarity: uncommon
+limits:
+  targets:
+    - rod
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

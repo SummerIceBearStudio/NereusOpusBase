@@ -1,0 +1,25 @@
+enabled: true
+name: Impact
+
+displayName: "过载"
+description: "在攻击时有概率造成大量伤害"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level
+  damage-multiplier: 1+0.33*level

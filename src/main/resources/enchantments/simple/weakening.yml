@@ -1,0 +1,25 @@
+enabled: true
+name: Weakening
+
+displayName: "连击"
+description: "短时间内连续对你的对手的伤害提升"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  duration: 20*level
+  damage-multiplier: 1+0.1*level

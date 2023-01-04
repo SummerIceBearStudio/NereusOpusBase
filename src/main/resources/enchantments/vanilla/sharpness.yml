@@ -1,0 +1,18 @@
+displayName: "锋利"
+description: "增加近战攻击伤害"
+rarity: common
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - sharpness
+    - smite
+    - razor
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

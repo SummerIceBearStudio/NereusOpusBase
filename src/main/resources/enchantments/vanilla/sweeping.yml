@@ -1,0 +1,14 @@
+displayName: "横扫之刃"
+description: "增加横扫攻击伤害"
+rarity: uncommon
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

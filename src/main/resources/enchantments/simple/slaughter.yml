@@ -1,0 +1,39 @@
+enabled: true
+name: Slaughter
+
+displayName: "屠宰"
+description: "对和平生物的伤害提升"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - trident
+    - swords
+    - axes
+  conflicts:
+    - power
+    - force
+    - serrated
+    - phantasm
+    - arachnid
+    - impaling
+    - sharpness
+    - bane_of_arthropods
+    - smite
+    - defusion
+    - razor
+    - ender_slayer
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.5*level

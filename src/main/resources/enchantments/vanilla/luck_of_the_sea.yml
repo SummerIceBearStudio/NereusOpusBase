@@ -1,0 +1,14 @@
+displayName: "海之眷顾"
+description: "增加钓鱼时获得宝藏的概率"
+rarity: rare
+limits:
+  targets:
+    - rod
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

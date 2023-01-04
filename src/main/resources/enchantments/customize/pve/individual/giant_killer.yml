@@ -1,0 +1,48 @@
+
+enabled: true
+name: GiantKiller
+
+displayName: "巨人杀手"
+description: "增加对巨人的伤害"
+
+maxLevel: 3
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+level*0.3
+
+
+type: SIMPLE #类型
+triggerType: ATTACK_ENTITY #触发器是实体攻击实体事件
+
+variables: [ ]
+
+conditions: #条件
+  1: #第一个条件
+    target: entity #对象是被伤害的实体
+    type: LIVING_ENTITY #对象类型是实体
+    chains:
+      1-A: #检测实体是否对应
+        target: type
+        type: STRING
+        expression: "target == GIANT"
+
+effects: #效果
+  1: #第一个效果
+    target: damage #修改对象是伤害
+    type: DOUBLE #对象类型是小数
+    expression: "target * %damage-multiplier%" #修改后的伤害表达式"

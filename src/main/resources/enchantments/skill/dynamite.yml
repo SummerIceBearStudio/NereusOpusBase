@@ -1,0 +1,32 @@
+enabled: true
+name: Dynamite
+
+displayName: "爆破"
+description: "§e右击§7可大范围破坏方块（冷却时间: §a360秒§7）"
+
+maxLevel: 2
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_DRAGON_FIREBALL_EXPLODE
+  cooldown: 360
+  particle:
+    type: EXPLOSION_HUGE
+    amount: 1
+
+  permission-check: true
+  hardness-check: bedrock,obisidian
+  range: 1+level

@@ -1,0 +1,26 @@
+enabled: true
+name: Corrosive
+
+displayName: "侵损"
+description: "射出的箭矢有概率损坏对手的装备"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 5*level
+  durability-decrease: level

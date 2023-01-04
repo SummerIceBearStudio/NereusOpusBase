@@ -1,0 +1,15 @@
+cd-info:
+  enable: true
+  form: actionbar
+  message: "§a{key} §7未冷却完成: §c{dist}秒"
+
+trigger:
+  action: RIGHT_CLICK #动作 RIGHT_CLICK右击/LEFT_CLICK左击/SWAP切换物品
+  shift-needed: false #是否需要下蹲才能触发
+  shift-ignored: true #下蹲时是否不触发
+
+rate:
+  - "nereusopus.cdrate.90:0.9"
+  - "nereusopus.cdrate.80:0.8"
+  - "nereusopus.cdrate.70:0.7"
+  - "nereusopus.cdrate.50:0.5"

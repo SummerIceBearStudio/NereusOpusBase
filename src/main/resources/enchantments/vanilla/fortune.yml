@@ -1,0 +1,18 @@
+displayName: "时运"
+description: "增加方块掉落数量或其掉落概率"
+rarity: epic
+limits:
+  targets:
+    - axes
+    - pickaxes
+    - hoes
+    - shovels
+  conflicts:
+    - silk_touch
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

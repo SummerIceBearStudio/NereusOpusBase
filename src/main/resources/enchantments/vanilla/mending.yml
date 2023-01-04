@@ -1,0 +1,32 @@
+displayName: "经验修补"
+description: "损耗获得的经验以修补工具的耐久度"
+rarity: legendary
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+    - pickaxes
+    - shovels
+    - hoes
+    - axes
+    - rod
+    - swords
+    - bow
+    - shears
+    - flint_and_steel
+    - carrot_stick
+    - shield
+    - elytra
+    - trident
+    - crossbow
+  conflicts:
+    - infinity
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

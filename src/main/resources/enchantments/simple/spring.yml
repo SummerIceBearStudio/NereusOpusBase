@@ -1,0 +1,34 @@
+enabled: true
+name: Spring
+
+displayName: "飘逸"
+description: "跳跃距离和高度提升"
+
+maxLevel: 3
+rarity: unknown
+grindstoneable: true
+
+limits:
+  targets:
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  velocity-y: 0.5
+  velocity-xz: 0.5
+
+
+
+
+
+
+
+
+

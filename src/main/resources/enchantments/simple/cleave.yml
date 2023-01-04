@@ -1,0 +1,27 @@
+enabled: true
+name: Cleave
+
+displayName: "碎星"
+description: "伤害对手时溅射伤害至周围生物"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - axes
+  conflicts:
+    - carve
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-splash-multiplier: 15*level
+  range: level
+  require-full-charge: true

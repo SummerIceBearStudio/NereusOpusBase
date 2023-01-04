@@ -1,0 +1,14 @@
+displayName: "水下速掘"
+description: "在水下挖掘速度更快"
+rarity: uncommon
+limits:
+  targets:
+    - helmets
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

@@ -1,0 +1,24 @@
+enabled: true
+name: Graceful
+
+displayName: "乘云"
+description: "从高处下落着陆前有概率获得缓降效果"
+
+maxLevel: 4
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 25*level

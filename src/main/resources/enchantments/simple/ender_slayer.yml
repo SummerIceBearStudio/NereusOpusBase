@@ -1,0 +1,31 @@
+enabled: true
+name: EnderSlayer
+
+displayName: "终末"
+description: "对末地生物的伤害提升"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - sharpness
+    - bane_of_arthropods
+    - smite
+    - defusion
+    - razor
+    - introversion
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.5*level

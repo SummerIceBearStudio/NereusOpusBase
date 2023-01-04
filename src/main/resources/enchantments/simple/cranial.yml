@@ -1,0 +1,24 @@
+enabled: true
+name: Cranial
+
+displayName: "透骨"
+description: "投掷的三叉戟爆头伤害提升"
+
+maxLevel: 6
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.05*level

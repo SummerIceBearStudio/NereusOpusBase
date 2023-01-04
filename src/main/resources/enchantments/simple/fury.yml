@@ -1,0 +1,25 @@
+enabled: true
+name: Fury
+
+displayName: "规劝"
+description: "在攻击时有概率号召附近的怪物攻击对手"
+
+maxLevel: 5
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 10*level
+  range: 2*level

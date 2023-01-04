@@ -1,0 +1,40 @@
+enabled: true
+name: Defusion
+
+displayName: "拆弹"
+description: "对爬行者的伤害提升"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - trident
+    - bow
+  conflicts:
+    - sharpness
+    - bane_of_arthropods
+    - smite
+    - razor
+    - ender_slayer
+    - introversion
+    - serrated
+    - phantasm
+    - arachnid
+    - impaling
+    - power
+    - force
+    - slaughter
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.5*level

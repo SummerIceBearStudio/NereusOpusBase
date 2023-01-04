@@ -1,0 +1,28 @@
+enabled: true
+name: Volatile
+
+displayName: "引爆"
+description: "在攻击时有概率释放爆炸冲击波"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  cause-fire: false
+  break-blocks: false
+  require-full-charge: true
+  chance: 3*level
+  power: 0.5*level

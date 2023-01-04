@@ -1,0 +1,14 @@
+displayName: "迅捷潜行"
+description: "增加玩家下蹲时的移动速度"
+rarity: rare
+limits:
+  targets:
+    - leggings
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

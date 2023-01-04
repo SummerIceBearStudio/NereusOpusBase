@@ -1,0 +1,14 @@
+displayName: "击退"
+description: "增加击退距离"
+rarity: uncommon
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

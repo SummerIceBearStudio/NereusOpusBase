@@ -1,0 +1,27 @@
+enabled: true
+name: Extinguishing
+
+displayName: "绝热"
+description: "受到火焰伤害时有概率直接将身上的火焰扑灭"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 10*level

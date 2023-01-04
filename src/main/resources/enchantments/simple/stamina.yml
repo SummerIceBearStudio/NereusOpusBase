@@ -1,0 +1,24 @@
+enabled: true
+name: Stamina
+
+displayName: "耐性"
+description: "奔跑时饱食损失降低"
+
+maxLevel: 4
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 12.5*level

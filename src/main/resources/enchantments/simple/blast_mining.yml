@@ -1,0 +1,33 @@
+enabled: true
+name: BlastMining
+
+displayName: "立方"
+description: "每次挖掘立方范围的方块"
+
+maxLevel: 1
+rarity: unknown
+grindstoneable: true
+
+limits:
+  targets:
+    - pickaxes
+  conflicts:
+    - drill
+    - vein
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  disable-on-sneak: true
+  enable-sound: false
+  permission-check: true
+  hardness-check: bedrock,obisidian
+  chance: 100
+  range_x: level+1
+  range_y: level+1
+  range_z: level+1

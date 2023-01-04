@@ -1,0 +1,27 @@
+enabled: true
+name: Chopless
+
+displayName: "钝化"
+description: "来自斧的伤害降低"
+
+maxLevel: 6
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1-0.05*level

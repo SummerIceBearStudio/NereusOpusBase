@@ -1,0 +1,24 @@
+enabled: true
+name: BlockBreather
+
+displayName: "无氧"
+description: "有概率免疫窒息伤害"
+
+maxLevel: 2
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 50*level

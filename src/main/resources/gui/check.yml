@@ -1,0 +1,23 @@
+type: CHECK_ITEM
+title: "点击背包内的物品以查询"
+size: 45
+contents:
+  frame_blue:
+    item: "BLUE_STAINED_GLASS_PANE;&7;"
+    slots: [ 11,29 ]
+  frame_black:
+    item: "BLACK_STAINED_GLASS_PANE;&7;"
+    slots: [ 0,1,2,3,4,5,6,7,8,9,17,18,27,35,36,37,38,39,41,42,43,44 ]
+  enchants:
+    slots: [ 12,13,14,15,16,21,22,23,24,25,30,31,32,33,34 ]
+  previous_page:
+    item: "PAPER;&b上一页;"
+    slots: [ 20 ]
+  next_page:
+    item: "PAPER;&b下一页;"
+    slots: [ 26 ]
+  upload:
+    slots: [ 19 ]
+  back:
+    item: "RED_STAINED_GLASS_PANE;&c返回;"
+    slots: [ 40 ]

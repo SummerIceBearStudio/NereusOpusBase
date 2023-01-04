@@ -1,0 +1,28 @@
+enabled: true
+name: Tripleshot
+
+displayName: "三言"
+description: "一次射出的箭矢数量增加为三支并分散为扇形"
+
+maxLevel: 1
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+  conflicts:
+    - succession
+    - pentashot
+    - buckshot
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  angle: 10
+  chance: 100

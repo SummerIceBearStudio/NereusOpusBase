@@ -1,0 +1,27 @@
+enabled: true
+name: Arcanic
+
+displayName: "无缝"
+description: "有概率免疫药水伤害"
+
+maxLevel: 5
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - helmets
+    - chestplates
+    - leggings
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 8*level

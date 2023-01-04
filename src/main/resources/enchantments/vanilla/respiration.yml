@@ -1,0 +1,14 @@
+displayName: "水下呼吸"
+description: "延长水下呼吸时间"
+rarity: uncommon
+limits:
+  targets:
+    - helmets
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

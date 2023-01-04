@@ -1,0 +1,27 @@
+enabled: true
+name: FireAffinity
+
+displayName: "炽热"
+description: "对燃烧的生物的伤害提升"
+
+maxLevel: 6
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - bow
+    - crossbow
+  conflicts:
+    - water_affinity
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.05*level

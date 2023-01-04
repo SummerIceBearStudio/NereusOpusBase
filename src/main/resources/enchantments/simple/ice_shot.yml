@@ -1,0 +1,27 @@
+enabled: true
+name: IceShot
+
+displayName: "冻结"
+description: "射出的箭矢有概率使对手获得缓慢效果"
+
+maxLevel: 3
+rarity: uncommon
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level
+  duration: 60*level
+  amplifier: level

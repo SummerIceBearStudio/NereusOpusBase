@@ -1,0 +1,25 @@
+enabled: true
+name: HungerCurse
+
+displayName: "饥饿诅咒"
+description: "使佩戴该头盔时饥饿速度加快"
+
+maxLevel: 1
+rarity: curse
+grindstoneable: false
+
+limits:
+  targets:
+    - helmets
+  conflicts:
+    - sating
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  repeat-ticks: 200

@@ -1,0 +1,25 @@
+enabled: true
+name: Necrotic
+
+displayName: "收割"
+description: "击杀凋零骷髅时掉落头颅的概率提升"
+
+maxLevel: 3
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts:
+    - looting
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level

@@ -1,0 +1,32 @@
+enabled: true
+name: SelfRealization
+
+displayName: "自我"
+description: "§e右击§7消除所有DEBUFF（冷却时间: §a600秒§7）"
+
+maxLevel: 1
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLORE: [ ]
+  withoutLORE: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  cooldown: 360
+  particle:
+    type: END_ROD
+    amount: 2

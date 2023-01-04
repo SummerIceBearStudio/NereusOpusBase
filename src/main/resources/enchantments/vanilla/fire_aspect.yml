@@ -1,0 +1,14 @@
+displayName: "火焰附加"
+description: "使目标着火"
+rarity: rare
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

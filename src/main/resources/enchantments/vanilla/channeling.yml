@@ -1,0 +1,15 @@
+displayName: "引雷"
+description: "在雨天召唤闪电攻击生物，仅在雷暴时生效"
+rarity: common
+limits:
+  targets:
+    - trident
+  conflicts:
+    - riptide
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

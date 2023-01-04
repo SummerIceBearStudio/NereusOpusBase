@@ -1,0 +1,35 @@
+enabled: true
+name: Cubism
+
+displayName: "分解"
+description: "对史莱姆和岩浆怪的伤害提升"
+
+maxLevel: 4
+rarity: common
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - bow
+    - crossbow
+  conflicts:
+    - serrated
+    - phantasm
+    - impaling
+    - power
+    - force
+    - slaughter
+    - boss_hunter
+    - arachnid
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.5*level

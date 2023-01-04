@@ -1,0 +1,25 @@
+enabled: true
+name: Confusion
+
+displayName: "错位"
+description: "在攻击时有概率打乱对手主手与副手的物品"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 3*level
+  require-full-charge: true

@@ -1,0 +1,26 @@
+enabled: true
+name: Radiance
+
+displayName: "光辉"
+description: "射出的箭矢落地附近的生物发光"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  range: 1.25*level
+  duration: 30*level

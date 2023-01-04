@@ -1,0 +1,40 @@
+range:
+  - 0.5
+  - 1
+  - 2
+height:
+  - -0.5
+  - -0.8
+  - -1
+
+triggers:
+  - diamond_ore
+  - gold_ore
+  - lapis_ore
+  - redstone_ore
+  - iron_ore
+  - obsidian
+  - ancient_debris
+
+custom:
+  HEAD:
+    type: CIRCLE
+    range: 0.75
+    height: 0.25
+  CHEST:
+    type: RNA
+    range: 0.75
+    height: 0.6
+  LEGS:
+    type: RNA
+    range: 0.75
+    height: 0.8
+  FEET:
+    type: CIRCLE
+    range: 1
+    height: 0.3
+  HAND:
+    type: SIMPLE
+  OFF_HAND:
+    type: SIMPLE
+

@@ -1,0 +1,31 @@
+enabled: true
+name: Quake
+
+displayName: "触怒"
+description: "§e右击§7对周边生物造成范围真实伤害（冷却时间: §a40秒§7）"
+
+maxLevel: 3
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_ENDER_DRAGON_GROWL
+  cooldown: 40
+  particle:
+    type: CRIT_MAGIC
+    amount: 2
+
+  damage: 3+level*2
+  range: 2+level

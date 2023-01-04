@@ -1,0 +1,26 @@
+enabled: true
+name: Magnetic
+
+displayName: "磁铁"
+description: "自动吸引周围的物品和经验到背包"
+
+maxLevel: 4
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - boots
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  range: level*2.5
+  repeat-ticks: 5
+  disable-on-sneak: true

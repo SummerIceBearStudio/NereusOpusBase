@@ -1,0 +1,25 @@
+enabled: true
+name: Backstab
+
+displayName: "不意"
+description: "攻击对手后方时伤害提升"
+
+maxLevel: 6
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage-multiplier: 1+0.05*level

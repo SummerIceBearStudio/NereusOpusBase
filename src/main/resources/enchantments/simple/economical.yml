@@ -1,0 +1,24 @@
+enabled: true
+name: Economical
+
+displayName: "节能"
+description: "使用烟花火箭加速时有概率不消耗"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - elytra
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 12.5*level

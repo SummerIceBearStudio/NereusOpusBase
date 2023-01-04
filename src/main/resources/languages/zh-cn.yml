@@ -1,0 +1,148 @@
+prefix: "§7§l[§a§lNereusOpus§7§l] "
+celebrate_message: "§7恭喜玩家 §e{player} §7获得了附魔 {enchant}§7, 品质: {rarity}"
+celebrate_title: "§e恭喜 {player}"
+celebrate_subtitle: "§7获得了附魔 {enchant}§7, 品质: {rarity}"
+successfully_remove_extra: "§a操作成功: §7手持物品的附魔词条扩充已经清除！"
+successfully_set_extra: "§a操作成功: §7手持物品的附魔词条扩充已经添加！"
+successfully_add_enchant: "§a操作成功: §7已经为手持物品添加附魔 {enchant}§7, 等级: {level}"
+successfully_remove_enchant: "§a操作成功: §7已经为手持物品删除附魔"
+successfully_give_book: "§a操作成功: §7附魔书已经发送至背包！"
+disabled_successfully: "§a操作成功: §7已经设置该附魔启用状态(%status%)"
+
+not_a_player: "§7操作失败: §c只有玩家才能使用该指令！"
+invalid_param_amount: "§7操作失败: §c参数个数错误！"
+invalid_param_type: "§7操作失败: §c参数必须是个整数！"
+player_not_found: "§7操作失败: §c玩家不存在或不在线！"
+enchant_not_found: "§7操作失败: §c附魔不存在或未被载入！"
+rarity_not_found: "§7操作失败: §c品质不存在！"
+type_not_found: "§7操作失败: §c类型不存在！"
+no_permission: "§7操作失败: §c你没有权限！"
+send_successfully: "§7操作成功: §a附魔书已经发至玩家背包（或掉落于玩家脚下）！"
+no_item_in_hand: "§c操作失败: §7玩家手上没有物品！"
+no_enchantment: "§c操作失败: §7该附魔不存在！"
+exceed_max_level: "§c操作失败: §7附魔超过最大等级: §c{level}"
+cannot_disable_vanilla: "§c操作失败: §7不能对原版或其他插件的附魔进行禁用/启用操作！"
+player_not_exist: "§7操作失败: §c玩家 §b{name} §c不存在!"
+
+help:
+  - "§aNereusOpus §7插件指令: §aMade By 夏日冰熊开发组"
+  - "§6★ §7 /nereusopus help - §e查看指令帮助"
+  - "§6★ §7 /nereusopus random [品质] [玩家] - §e给玩家一本随机的附魔书"
+  - "§6★ §7 /nereusopus info <附魔> - §e查询一个附魔的基础信息"
+  - "§6★ §7 /nereusopus enchant <附魔> [等级] [玩家] - §e获取附魔书（空手时）或为手持物品附魔"
+  - "§6★ §7 /nereusopus book <附魔> [等级] [玩家] - §e获取附魔书"
+  - "§6★ §7 /nereusopus disable <附魔> <状态(disable/enable)> - §e暂时让一个附魔不生效(或还原)"
+
+help_not_op:
+  - "§aNereusOpus §7插件指令: §aMade By 夏日冰熊开发组"
+  - "§6★ §7 /nereusopus help - §e查看指令帮助"
+  - "§6★ §7 /nereusopus info <附魔> - §e查询一个附魔的基础信息"
+
+info:
+  - "§8| §7附魔名称: {displayname}"
+  - "§8| §7附魔品质: {rarity}"
+  - "§8| §7附魔介绍: {description}"
+
+type:
+  vanilla: "§b原版"
+  curse: "§c诅咒"
+  simple: "§a被动"
+  skill: "§b主动"
+  artifact: "§e粒子"
+
+type_item:
+  type: PLAYER_HEAD
+  name: "{type}"
+  lore:
+    - "§8| 点击打开该类别的附魔大全界面"
+custom_item:
+  type: ENCHANTED_BOOK
+  name: "{displayname}"
+  lore:
+    - "§8| §7品质: {rarity}"
+    - "§8| §7对象: §b{targets}"
+    - "§8| §7等级: {level} / §c{maxlevel}级"
+    - "§8| §7介绍: {description}"
+
+conflict_item:
+  type: ANVIL
+  name: "§b附魔前置"
+  denied_name: "§8| §7物品名: §e{denied_name}"
+  denied_lore:
+    start: "§8| §7物品描述: "
+    contents: "    §7- {line}"
+  denied_enchants:
+    start: "§8| §7物品附魔: "
+    contents: "    §7- {enchant} {roman}"
+  non-conflict: "§8| §7无冲突"
+  has-conflict: "§8| §7满足以上任一要求，即无法得到/打上该附魔（得到附魔书除外）"
+
+enchant_params:
+  amount: "数量/规模: §a{value}"
+  chance: "触发几率: §a{value}%"
+  repeat-ticks: "生效周期: §a{value}刻"
+  durability-decrease: "耐久降低: §a{value}点"
+  durability-increase: "耐久升高: §a{value}点"
+  durability-decrease-extra: "额外磨损: §a{value}点"
+  require-full-charge: "是否跟随攻击冷却: {value}"
+  velocity: "加速度: §a{value}格/秒²"
+  velocity-y: "垂直加速: §a{value}格/秒"
+  velocity-xz: "水平加速: §a{value}格/秒"
+  damage-multiplier: "伤害倍率: §a×{value}"
+  damage-splash-multiplier: "溅射伤害: §a{value}%"
+  damage-splash: "溅射伤害: §a{value}点"
+  duration: "持续时间: §a{value}刻"
+  amplifier: "效果等级: §a{value}级"
+  disable-on-players: "是否不对玩家生效: {value}"
+  damage: "真实伤害: §a{value}点"
+  power: "规模/力度: §a{value}"
+  cause-fire: "是否引发火焰: {value}"
+  break-blocks: "是否破坏方块: {value}"
+  angle: "偏移角度: §a{value}°"
+  decrease-if-cooldown: "是否存在冷却减幅: {value}"
+  speed: "速度加成: §a{value}格/秒"
+  range: "范围: §a{value}格"
+  range_x: "x轴范围: §a{value}格"
+  range_y: "y轴范围: §a{value}格"
+  range_z: "z轴范围: §a{value}格"
+  judge-range: "判定范围: §a{value}格"
+  percent: "比例: §a{value}%"
+  cooldown-decreased: "攻击冷却减幅: §a{value}%"
+  min-health: "最低血量: §a{value}点"
+  min-health-percent: "最低血量: §a{value}点"
+  avaliable-on-players: "是否对玩家生效: {value}"
+  drop-xp: "是否掉落经验: {value}"
+  oxygen: "氧气值: §ga{value}点"
+  min-distance: "最长生效距离: §a{value}格"
+  max-health-increase: "最大血量增加: §a{value}点"
+  drops: "掉落物: §a{value}"
+  targets: "作用对象: §a{value}"
+  exp-multiplier: "经验倍率: §a×{value}"
+  heal: "回复血量: §a{value}点"
+  heal-multiplier: "回复倍率: §a×{value}"
+  max-distance: "最大距离: §a{value}格"
+  health-judging-line: "判定血量: §a{value}点"
+  high-damage-multiplier: "高于判定线: §a×{value}"
+  low-damage-multiplier: "低于判定线: §a×{value}"
+  absorption-multiplier: "伤害吸收倍率: §a×{value}"
+  spread: "偏散程度: §a{value}°"
+  custom: "持续显示: {value}"
+  food: "饱食度: §6{value}"
+
+  colored: "是否附带发光颜色: {value}"
+
+  sound: "释放音效: §a{value}"
+  cooldown: "冷却时间: §a{value}秒"
+  particle.type: "粒子效果: §a{value}"
+  particle.amount: "粒子数量: §a{value}"
+  permission-check: "是否检查方块权限: {value}"
+  hardness-check: "是否检查方块硬度: {value}"
+  disable-on-sneak: "是否在蹲下时禁用: {value}"
+  enable-sound: "是否开启声音: {value}"
+
+true: "§a✔"
+false: "§c✖"
+
+papi_holders:
+  player_level: "经验等级"
+

@@ -1,0 +1,25 @@
+enabled: true
+name: Spiked
+
+displayName: "扎刺"
+description: "对被钩上的生物造成伤害"
+
+maxLevel: 2
+rarity: rare
+grindstoneable: true
+
+limits:
+  targets:
+    - rod
+  conflicts:
+    - harpoon
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage: level

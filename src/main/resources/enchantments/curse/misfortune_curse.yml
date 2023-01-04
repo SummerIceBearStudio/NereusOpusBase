@@ -1,0 +1,28 @@
+enabled: true
+name: MisfortuneCurse
+
+displayName: "霉运诅咒"
+description: "使工具破坏方块时有概率不掉落"
+
+maxLevel: 3
+rarity: curse
+grindstoneable: false
+
+limits:
+  targets:
+    - pickaxes
+    - axes
+    - hoes
+    - shovels
+  conflicts:
+    - fortune
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  chance: 15*level

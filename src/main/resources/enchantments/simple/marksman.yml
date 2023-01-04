@@ -1,0 +1,25 @@
+enabled: true
+name: Marksman
+
+displayName: "定力"
+description: "射出的箭矢在一定时间内无视重力"
+
+maxLevel: 3
+rarity: unknown
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  duration: 40*level

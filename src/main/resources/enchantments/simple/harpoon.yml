@@ -1,0 +1,25 @@
+enabled: true
+name: Harpoon
+
+displayName: "尖钩"
+description: "对被钩上的生物造成大量伤害"
+
+maxLevel: 2
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - rod
+  conflicts:
+    - spiked
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  damage: 4*level

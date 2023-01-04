@@ -1,0 +1,17 @@
+displayName: "亡灵杀手"
+description: "对亡灵生物造成额外伤害"
+rarity: common
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - sharpness
+    - bane_of_arthropods
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]

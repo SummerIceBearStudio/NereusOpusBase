@@ -1,0 +1,17 @@
+type: GRINDSTONE
+title: "砂轮磨砂模拟/操作台"
+size: 9
+contents:
+  frame_black:
+    item: "BLACK_STAINED_GLASS_PANE;&7;"
+    slots: [ 0,1,5,7,8]
+  first:
+    slots: [ 2 ]
+  convert:
+    slots: [ 3 ]
+    item: "PLAYER_HEAD;&b +;"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU2YTM2MTg0NTllNDNiMjg3YjIyYjdlMjM1ZWM2OTk1OTQ1NDZjNmZjZDZkYzg0YmZjYTRjZjMwYWI5MzExIn19fQ=="
+  second:
+    slots: [ 4 ]
+  exp:
+    slots: [ 6 ]

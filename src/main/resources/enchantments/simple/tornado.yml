@@ -1,0 +1,28 @@
+enabled: true
+name: Tornado
+
+displayName: "击飞"
+description: "在攻击时将对手击向空中"
+
+maxLevel: 4
+rarity: epic
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+  conflicts:
+    - knockback
+    - grapple
+    - annihilate
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  velocity: 0.25*level

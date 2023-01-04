@@ -1,0 +1,33 @@
+enabled: true
+name: FlashBack
+
+displayName: "回溯"
+description: "§e右击§7在原地记录状态，一段时间后闪回到该位置与状态（冷却时间: §a360秒§7）"
+
+maxLevel: 3
+rarity: unknown
+grindstoneable: true
+
+limits:
+  targets:
+    - swords
+    - axes
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLORE: [ ]
+  withoutLORE: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  cooldown: 360
+  particle:
+    type: CRIT
+    amount: 2
+  duration: 200-level*20

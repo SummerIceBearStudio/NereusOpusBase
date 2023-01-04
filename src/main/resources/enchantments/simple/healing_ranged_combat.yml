@@ -1,0 +1,27 @@
+enabled: true
+name: HealingRangedCombat
+
+displayName: "妙手"
+description: "使得被射中/抛掷中的血量降低的玩家血量恢复"
+
+maxLevel: 3
+rarity: legendary
+grindstoneable: true
+
+limits:
+  targets:
+    - bow
+    - crossbow
+    - trident
+  conflicts: [ ]
+  neededEnchants: [ ]
+  withLore: [ ]
+  withoutLore: [ ]
+  withName: ""
+  withoutName: ""
+  permission: ""
+  papi: [ ]
+
+params:
+  heal: level*3
+  require-full-charge: true

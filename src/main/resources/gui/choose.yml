@@ -1,0 +1,16 @@
+type: CHOOSE
+title: "选择操作类别"
+size: 9
+contents:
+  rename:
+    slots: [ 2 ]
+    item: "PLAYER_HEAD;&b重命名;&8| &7点击这里打开物品重命名界面"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRiODlhZDA2ZDMxOGYwYWUxZWVhZjY2MGZlYTc4YzM0ZWI1NWQwNWYwMWUxY2Y5OTlmMzMxZmIzMmQzODk0MiJ9fX0="
+  enchant:
+    slots: [ 4 ]
+    item: "PLAYER_HEAD;&b附魔物品;&8| &7点击这里打开物品附魔界面"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNmN2FmNTQ4ZGNhNmEyYTk0MmVkNzI2NDBkZDgwZTUwMGY4MzI5OGY4OWMzMWUzYWI0YTVmNmNlMjBlMmY0ZCJ9fX0="
+  fix:
+    slots: [ 6 ]
+    item: "PLAYER_HEAD;&b修复与磨砂;&8| &7点击这里打开磨砂/修复界面 (§c待9.20更新§7)"
+    skull: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5OWJmYTYxZmU1NTJmMWU2NjM2YjAzZmJlNDBmNGU0NzBjM2IzY2IxNGY3MGU5MDEyODEzNzkwZWFkNTY4ZiJ9fX0="
