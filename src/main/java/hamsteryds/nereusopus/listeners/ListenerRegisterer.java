@@ -3,6 +3,7 @@ package hamsteryds.nereusopus.listeners;
 import hamsteryds.nereusopus.NereusOpus;
 import hamsteryds.nereusopus.listeners.data.PlayerListener;
 import hamsteryds.nereusopus.listeners.display.chat.ChatPacket1_18;
+import hamsteryds.nereusopus.listeners.display.chat.ChatPacket1_19;
 import hamsteryds.nereusopus.listeners.display.guis.EnchantingTablePacket;
 import hamsteryds.nereusopus.listeners.display.guis.MerchantListPacketAdapter;
 import hamsteryds.nereusopus.listeners.display.items.SetCreativeSlotPacketAdapter;
@@ -44,6 +45,9 @@ public class ListenerRegisterer {
         String version = new ItemStack(Material.STONE).getItemMeta().getClass().getPackageName();
         if (version.contains("18")) {
             NereusOpus.protocolManager.addPacketListener(new ChatPacket1_18());
+        }
+        if (version.contains("19")) {
+            NereusOpus.protocolManager.addPacketListener(new ChatPacket1_19());
         }
 
         Bukkit.getPluginManager().registerEvents(new PermissionUtils(), NereusOpus.plugin);
