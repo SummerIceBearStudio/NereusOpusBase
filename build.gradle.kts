@@ -33,6 +33,6 @@ group = "com.github.summericebearstudio"
 version = "3.0.0"
 description = "NereusOpusBase"
 
-tasks.withType<JavaCompile> {
+tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
