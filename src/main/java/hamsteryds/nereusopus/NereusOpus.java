@@ -88,6 +88,7 @@ public class NereusOpus extends JavaPlugin {
 
         logger.info("|- Successfully Loaded NereusOpus!");
         logger.info("| ");
+        logger.info("| ");
         logger.info("|- 本插件为 夏日冰熊开发组 创作 插件交流/购买群：953201353");
         logger.info("|- 感谢 次元互联 对本项目的支持 售前服务群：1064601581");
         logger.info("|- 感谢 YiMiner 对本项目的支持 强力宝石插件交流群：777905589");
