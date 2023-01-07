@@ -9,6 +9,7 @@ import hamsteryds.nereusopus.enchants.skill.Xray;
 import hamsteryds.nereusopus.listeners.ListenerRegisterer;
 import hamsteryds.nereusopus.listeners.executors.entries.BlockListener;
 import hamsteryds.nereusopus.listeners.executors.entries.CheckListeners;
+import hamsteryds.nereusopus.supports.HookNereusOpus;
 import hamsteryds.nereusopus.supports.InteractionVisualizerSupport;
 import hamsteryds.nereusopus.supports.OldVersionSupport;
 import hamsteryds.nereusopus.utils.api.*;
@@ -82,6 +83,7 @@ public class NereusOpus extends JavaPlugin {
             OldVersionSupport.initialize();
         }
         InteractionVisualizerSupport.initialize();
+        HookNereusOpus.initialize();
 
         int pluginId = 16162;
         new Metrics(this, pluginId);
@@ -103,6 +105,7 @@ public class NereusOpus extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        HookNereusOpus.unInitialize();
         for (Player player : Bukkit.getOnlinePlayers()) {
             InventoryView view = player.getOpenInventory();
             if (view.getTopInventory().getHolder() instanceof CustomInventoryHolder) {

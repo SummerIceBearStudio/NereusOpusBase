@@ -22,6 +22,7 @@ dependencies {
     compileOnly("com.comphenix.protocol:ProtocolLib:4.8.0")
     compileOnly("me.clip:placeholderapi:2.11.2")
     compileOnly(files("libs/InteractionVisualizer.jar"))
+    compileOnly(files("libs/TrChat-2.0.0-RC-6.jar"))
     compileOnly("com.mojang:authlib:1.5.25")
 }
 
