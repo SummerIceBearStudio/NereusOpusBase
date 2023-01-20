@@ -8,6 +8,8 @@ import org.bukkit.scoreboard.Team;
 
 import java.util.HashMap;
 
+
+
 public class ColorUtils {
     private static final HashMap<ChatColor, Team> coloredTeams = new HashMap<>();
 
@@ -22,6 +24,12 @@ public class ColorUtils {
             coloredTeams.put(color, board.getTeam("NO-" + color.name()));
         }
     }
+
+    /**
+     *
+     * @param color 颜色
+     * @return 通过颜色获取的Team类
+     */
 
     public static Team getTeamByColor(ChatColor color) {
         return coloredTeams.get(color);

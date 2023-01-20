@@ -39,7 +39,6 @@ public class EnchantmentUtils {
     public static final CustomRarity defaultRarity;
     public static Map<NamespacedKey, Enchantment> byKey;
     public static Map<String, Enchantment> byName;
-    public static Boolean saveToPDC;
 
     static {
         try {
@@ -59,8 +58,6 @@ public class EnchantmentUtils {
         anvilLimits = new HashSet<>(ConfigUtils.getEnumList(ConfigUtils.config, "config.yml", "limitcheck.anvil", LimitType.class));
         defaultType = EnchantmentType.getType(ConfigUtils.config.getString("default.type"));
         defaultRarity = CustomRarity.fromId(ConfigUtils.config.getString("default.rarity"));
-
-        saveToPDC = ConfigUtils.config.getBoolean("save.save_to_pdc");
     }
 
     public static Enchantment fromDisplayName(String name) {
@@ -90,10 +87,6 @@ public class EnchantmentUtils {
 
     public static AbstractEnchantment fromKey(NamespacedKey key) {
         return CustomEnchantments.BY_KEY.get(key);
-    }
-
-    public static List<String> getEnchantNames() {
-        return new ArrayList<>(CustomEnchantments.BY_ID.keySet());
     }
 
     public static List<AbstractEnchantment> getEnchants() {
@@ -244,16 +237,6 @@ public class EnchantmentUtils {
         }
     }
 
-    public static Pair<Boolean, String> checkAvailable(Enchantment enchantment, EquipmentSlot slot, ItemStack item, LimitSet set) {
-        EnchantmentLimit limits = getLimits(enchantment);
-        Pair<Boolean, LimitType> result = isAvailable(limits, slot, item, set, enchantment.getItemTarget());
-        if (result.getFirst()) {
-            return new Pair(true, "§a✔ §7可附魔/使用");
-        } else {
-            return new Pair(false, "§c✖ §7" + result.getSecond().cause);
-        }
-    }
-
     public static Pair<Boolean, LimitType> isAvailable(EnchantmentLimit limits, EquipmentSlot slot, ItemStack item, LimitSet set, EnchantmentTarget vanillaTarget, LivingEntity... entity) {
         HashSet<LimitType> limitTypes = set == LimitSet.USE ? useLimits :
                 set == LimitSet.GET_ITEM ? attainItemLimits :
@@ -338,74 +321,6 @@ public class EnchantmentUtils {
         return new Pair(true, null);
     }
 
-    public static Pair<Boolean, LimitType> isAvailable(EnchantmentLimit limits, EquipmentSlot slot, ItemStack item, HashSet<LimitType> limitTypes, EnchantmentTarget vanillaTarget, boolean needToAdd) {
-        if (limits == null) {
-            return new Pair(true, null);
-        }
-        if (item == null) {
-            return new Pair<>(false, LimitType.TARGET);
-        }
-        for (LimitType limitType : limitTypes) {
-            if (limitType == LimitType.TARGET) {
-                if (!limits.matchesType(item, vanillaTarget)) {
-                    return new Pair(false, LimitType.TARGET);
-                }
-            } else if (limitType == LimitType.LIMIT) {
-                int current = item.getEnchantments().size();
-                int min = AnvilListener.maxAmount;
-                for (CustomTarget target : CustomTarget.customTargets.values()) {
-                    if (target.containsType(item.getType())) {
-                        min = Math.min(min, target.limits());
-                    }
-                }
-                if (item.hasItemMeta()) {
-                    if (NBTUtils.has("extra", item.getItemMeta().getPersistentDataContainer(), PersistentDataType.INTEGER)) {
-                        int extra = NBTUtils.read("extra", item.getItemMeta().getPersistentDataContainer(), PersistentDataType.INTEGER);
-                        min += extra;
-                    }
-                }
-                if (needToAdd) {
-                    min += 1;
-                }
-                if (min <= current) {
-                    return new Pair(false, LimitType.LIMIT);
-                }
-            } else if (limitType == LimitType.NEEDED_NAME) {
-                if (!limits.hasNeededName(item)) {
-                    return new Pair(false, LimitType.NEEDED_NAME);
-                }
-            } else if (limitType == LimitType.DENIED_NAME) {
-                if (limits.hasDeniedName(item)) {
-                    return new Pair(false, LimitType.DENIED_NAME);
-                }
-            } else if (limitType == LimitType.NEEDED_LORE) {
-                if (!limits.hasNeededLore(item)) {
-                    return new Pair(false, LimitType.NEEDED_LORE);
-                }
-            } else if (limitType == LimitType.DENIED_LORE) {
-                if (limits.hasDeniedLore(item)) {
-                    return new Pair(false, LimitType.DENIED_LORE);
-                }
-            } else if (limitType == LimitType.NEEDED_ENCHANT) {
-                if (!limits.hasNeededEnchants(item)) {
-                    return new Pair(false, LimitType.NEEDED_ENCHANT);
-                }
-            } else if (limitType == LimitType.DENIED_ENCHANT) {
-                if (limits.conflictsWith(item)) {
-                    return new Pair(false, LimitType.DENIED_ENCHANT);
-                }
-            } else if (limitType == LimitType.SLOT) {
-                if (slot != null) {
-                    if (!limits.matchesSlot(slot)) {
-                        return new Pair(false, LimitType.SLOT);
-                    }
-                }
-            }
-        }
-        return new Pair(true, null);
-
-    }
-
     public static Pair<Enchantment, Integer> toEnchantment(String text) {
         String[] split = text.split(";");
         int level = split.length > 1 ? Integer.parseInt(split[1]) : 1;
@@ -424,92 +339,5 @@ public class EnchantmentUtils {
         }
         enchantName = enchantName.substring(0, 1).toUpperCase() + enchantName.substring(1);
         return EnchantmentUtils.fromDisplayName(enchantName);
-    }
-
-    public static void savePlayerEnchants(Player player) {
-        PlayerInventory inv = player.getInventory();
-        for (int i = 0; i < inv.getSize(); i++) {
-            ItemStack item = inv.getItem(i);
-            if (item == null) {
-                continue;
-            }
-            EnchantmentsInfo info = new EnchantmentsInfo();
-            Map<Enchantment, Integer> enchants = item.getEnchantments();
-            if (enchants.isEmpty()) {
-                continue;
-            }
-            for (Enchantment enchant : enchants.keySet()) {
-                Integer level = enchants.get(enchant);
-                info.add(new SerializablePair(enchant.getKey().getKey(), level));
-            }
-            ItemUtils.writeEnchants(item, info);
-        }
-        Inventory enderInv = player.getEnderChest();
-        for (int i = 0; i < enderInv.getSize(); i++) {
-            ItemStack item = enderInv.getItem(i);
-            if (item == null) {
-                continue;
-            }
-            EnchantmentsInfo info = new EnchantmentsInfo();
-            Map<Enchantment, Integer> enchants = item.getEnchantments();
-            if (enchants.isEmpty()) {
-                continue;
-            }
-            for (Enchantment enchant : enchants.keySet()) {
-                Integer level = enchants.get(enchant);
-                info.add(new SerializablePair(enchant.getKey().getKey(), level));
-            }
-            ItemUtils.writeEnchants(item, info);
-        }
-        NereusOpus.logger.info("Save player(name : " + player.getName() + ") enchants successfully!");
-    }
-
-    public static void loadPlayerEnchants(Player player) {
-        PlayerInventory inv = player.getInventory();
-        NereusOpus.logger.info("Start loading player(name : " + player.getName() + ") enchants...");
-        for (int i = 0; i < inv.getSize(); i++) {
-            ItemStack item = inv.getItem(i);
-            if (item == null) {
-                continue;
-            }
-            EnchantmentsInfo info = ItemUtils.readEnchants(item);
-            if (info == null) {
-                ItemUtils.clearEnchants(item);
-                continue;
-            }
-            for (SerializablePair<String, Integer> p : info.get()) {
-                String name = p.getFirst();
-                Integer level = p.getSecond();
-//                NereusOpus.logger.info(name + " : " + level);
-                if (EnchantmentUtils.fromID(name) == null) {
-                    NereusOpus.logger.warning("Can't find enchant : " + name);
-                }
-                item.addUnsafeEnchantment(Objects.requireNonNull(EnchantmentUtils.fromID(name)), level);
-            }
-            ItemUtils.clearEnchants(item);
-        }
-        Inventory enderInv = player.getEnderChest();
-        for (int i = 0; i < enderInv.getSize(); i++) {
-            ItemStack item = enderInv.getItem(i);
-            if (item == null) {
-                continue;
-            }
-            EnchantmentsInfo info = ItemUtils.readEnchants(item);
-            if (info == null) {
-                ItemUtils.clearEnchants(item);
-                continue;
-            }
-            for (SerializablePair<String, Integer> p : info.get()) {
-                String name = p.getFirst();
-                Integer level = p.getSecond();
-//                NereusOpus.logger.info(name + " : " + level);
-                if (EnchantmentUtils.fromID(name) == null) {
-                    NereusOpus.logger.warning("Can't find enchant : " + name);
-                }
-                item.addUnsafeEnchantment(Objects.requireNonNull(EnchantmentUtils.fromID(name)), level);
-            }
-            ItemUtils.clearEnchants(item);
-        }
-        NereusOpus.logger.info("Load player(name : " + player.getName() + ") enchants successfully!");
     }
 }

@@ -66,13 +66,6 @@ public class ItemUtils {
         return item;
     }
 
-    public static ItemStack setName(ItemStack item, String name) {
-        ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(name);
-        item.setItemMeta(meta);
-        return item;
-    }
-
     public static ItemStack addDurability(ItemStack item, double percent) {
         if (percent < 1 && percent > 0) {
             item.setDurability((short) Math.max(item.getDurability() - item.getType().getMaxDurability() * percent, 0));
@@ -215,57 +208,6 @@ public class ItemUtils {
 
     public static int getEnchantLevel(ItemStack item, String id) {
         return item.getEnchantmentLevel(EnchantmentUtils.fromID(id));
-    }
-
-    public static <T> T read(@NotNull ItemStack item, NamespacedKey key, PersistentDataType<T, T> type) {
-        ItemMeta meta = item.getItemMeta();
-        PersistentDataContainer pdc = meta.getPersistentDataContainer();
-        if (pdc.has(key, type)) {
-            return pdc.get(key, type);
-        }
-        return null;
-    }
-
-    public static <T> ItemStack write(@NotNull ItemStack item, NamespacedKey key, PersistentDataType<T, T> type, T value) {
-        ItemMeta meta = item.getItemMeta();
-        PersistentDataContainer pdc = meta.getPersistentDataContainer();
-        if (pdc.has(key, type)) {
-            pdc.remove(key);
-        }
-        pdc.set(key, type, value);
-        item.setItemMeta(meta);
-        return item;
-    }
-
-    public static ItemStack writeEnchants(@NotNull ItemStack item, EnchantmentsInfo info) {
-        ItemMeta meta = item.getItemMeta();
-        PersistentDataContainer pdc = meta.getPersistentDataContainer();
-        NamespacedKey key = ItemUtils.enchantsInfoKey;
-        if (pdc.has(key, new EnchantmentsInfoDataType())) {
-            pdc.remove(key);
-        }
-        pdc.set(key, new EnchantmentsInfoDataType(), info);
-        item.setItemMeta(meta);
-        return item;
-    }
-
-    public static EnchantmentsInfo readEnchants(@NotNull ItemStack item) {
-        ItemMeta meta = item.getItemMeta();
-        PersistentDataContainer pdc = meta.getPersistentDataContainer();
-        NamespacedKey key = ItemUtils.enchantsInfoKey;
-        if (pdc.has(key, new EnchantmentsInfoDataType())) {
-            return pdc.get(key, new EnchantmentsInfoDataType());
-        }
-        return null;
-    }
-
-    public static void clearEnchants(@NotNull ItemStack item) {
-        ItemMeta meta = item.getItemMeta();
-        PersistentDataContainer pdc = meta.getPersistentDataContainer();
-        NamespacedKey key = ItemUtils.enchantsInfoKey;
-        if (pdc.has(key)) {
-            pdc.remove(key);
-        }
     }
 
     public static ItemStack addDurability(ItemStack item, int added) {
