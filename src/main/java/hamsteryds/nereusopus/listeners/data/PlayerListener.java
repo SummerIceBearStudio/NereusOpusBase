@@ -3,6 +3,7 @@ package hamsteryds.nereusopus.listeners.data;
 import hamsteryds.nereusopus.NereusOpus;
 import hamsteryds.nereusopus.utils.api.EnchantmentUtils;
 import hamsteryds.nereusopus.utils.api.MessageUtils;
+import hamsteryds.nereusopus.utils.api.PdcUtils;
 import hamsteryds.nereusopus.utils.internal.TrieUtils;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -16,8 +17,8 @@ public class PlayerListener implements Listener {
     public void onJoin(PlayerJoinEvent event) {
         TrieUtils.onlinePlayers.addWord(event.getPlayer().getName());
         TrieUtils.offlinePlayers.addWord(event.getPlayer().getName());
-        if (EnchantmentUtils.saveToPDC) {
-            EnchantmentUtils.loadPlayerEnchants(event.getPlayer());
+        if (PdcUtils.saveToPDC) {
+            PdcUtils.loadPlayerEnchants(event.getPlayer());
         }
         new BukkitRunnable() {
             public void run() {
@@ -29,8 +30,8 @@ public class PlayerListener implements Listener {
     @EventHandler(priority = EventPriority.LOWEST)
     public void onQuit(PlayerQuitEvent event) {
         TrieUtils.onlinePlayers.removeWord(event.getPlayer().getName());
-        if (EnchantmentUtils.saveToPDC) {
-            EnchantmentUtils.savePlayerEnchants(event.getPlayer());
+        if (PdcUtils.saveToPDC) {
+            PdcUtils.savePlayerEnchants(event.getPlayer());
         }
     }
 }
