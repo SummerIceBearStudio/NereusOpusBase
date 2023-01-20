@@ -34,5 +34,5 @@ jobs:
         arguments: build
     - uses: actions/upload-artifact@v3
       with:
-        name: Package
+        name: NereusOpusBase自动构建输出包
         path: build/libs
