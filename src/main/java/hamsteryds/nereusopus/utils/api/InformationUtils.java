@@ -14,7 +14,9 @@ public class InformationUtils {
     }
 
     public static void broadcastMsg(String msg) {
-        Bukkit.broadcast(Component.text(msg));
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            player.sendMessage(Component.text(msg));
+        }
     }
 
     public static void sendTitle(Entity entity, String title, String subTitle) {

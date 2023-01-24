@@ -22,3 +22,5 @@ limits:
 
 params:
   velocity: 1+0.0625*level
+  delay: false
+  direct: false

@@ -7,8 +7,9 @@ author:
   - TwiShimmer
   - IceAge666
   - 关怀他人
-  - 小张up
+  - xiaozhangup
 api-version: 1.18
+load: STARTUP
 
 depend:
   - PlaceholderAPI
@@ -16,15 +17,9 @@ depend:
 softdepend:
   - Citizens
   - InteractionVisualizer
-
-loadbefore:
-  - CrazyAuctionsPlus
-  - QuickShop
-  - GlobalShop
-  - ExcellentCrates
-  - Shopkeepers
-  - QuickShop-Hikari
-  - AuctionHouse
+  - AureliumSkills
+  - HuskSync
+  - ItemsAdder
 
 commands:
   nereusopus:

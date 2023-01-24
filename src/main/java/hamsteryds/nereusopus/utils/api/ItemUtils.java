@@ -79,6 +79,9 @@ public class ItemUtils {
         if (item == null || !isDamageable(item)) {
             return item;
         }
+        if (item == null || !isDamageable(item)) {
+            return item;
+        }
         if (item.hasItemMeta() && item.getItemMeta().isUnbreakable()) {
             return item;
         }

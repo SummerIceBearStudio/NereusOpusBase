@@ -9,6 +9,7 @@ repositories {
     maven("https://maven.citizensnpcs.co/repo")
     maven("https://repo.dmulloy2.net/repository/public/")
     maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -18,6 +19,7 @@ dependencies {
     compileOnly("org.spigotmc:spigot:1.19.2-R0.1-SNAPSHOT")
     compileOnly("org.spigotmc:spigot:1.18.2-R0.1-SNAPSHOT")
 
+    compileOnly("com.github.LoneDev6:API-ItemsAdder:3.2.5")
     compileOnly("net.citizensnpcs:citizensapi:2.0.30-SNAPSHOT")
     compileOnly("com.comphenix.protocol:ProtocolLib:4.8.0")
     compileOnly("me.clip:placeholderapi:2.11.2")

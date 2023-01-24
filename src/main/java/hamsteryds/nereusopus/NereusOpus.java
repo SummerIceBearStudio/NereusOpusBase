@@ -16,6 +16,8 @@ import hamsteryds.nereusopus.utils.api.*;
 import hamsteryds.nereusopus.utils.gui.CustomInventoryHolder;
 import hamsteryds.nereusopus.utils.internal.TrieUtils;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.Configuration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.InventoryView;
@@ -29,6 +31,8 @@ public class NereusOpus extends JavaPlugin {
     public static NereusOpus plugin;
     public static Logger logger;
     public static boolean citizensEnabled = false;
+    public static boolean itemsadder = false;
+    public static boolean display = true;
     public static ProtocolManager protocolManager;
 
     public static void severe(String msg) {
@@ -51,11 +55,17 @@ public class NereusOpus extends JavaPlugin {
     public void onEnable() {
         plugin = this;
         logger = getLogger();
+        YamlConfiguration config = ConfigUtils.autoUpdateConfigs("", "config.yml");
 
         logger.info("Starting Loading NereusOpus");
 
         logger.info("|- Hooking to ProtocolLib...");
         protocolManager = ProtocolLibrary.getProtocolManager();
+
+        itemsadder = config.getBoolean("itemsadder", false);
+        if (itemsadder) {
+            logger.info("|- Hooking to ItemsAdder...");
+        }
 
         logger.info("|- Loading Configuration Module...");
         ConfigUtils.initialize();
@@ -71,6 +81,11 @@ public class NereusOpus extends JavaPlugin {
 
         logger.info("|- Registering Listeners...");
         ListenerRegisterer.loadListeners();
+        if (display) {
+            logger.info("|- Enable Display...");
+        }
+
+        display = config.getBoolean("display.enable", true);
 
         logger.info("|- Registering Commands...");
         RandomCommand.initialize();
@@ -111,6 +126,7 @@ public class NereusOpus extends JavaPlugin {
             if (view.getTopInventory().getHolder() instanceof CustomInventoryHolder) {
                 player.closeInventory();
             }
+            player.kick();
         }
         Xray.shulkers.values().forEach((UUID uuid) -> {
             Entity entity = Bukkit.getEntity(uuid);

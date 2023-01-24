@@ -1,5 +1,7 @@
 package hamsteryds.nereusopus.utils.api;
 
+import dev.lone.itemsadder.api.CustomBlock;
+import hamsteryds.nereusopus.NereusOpus;
 import hamsteryds.nereusopus.listeners.executors.entries.BlockListener;
 import org.bukkit.*;
 import org.bukkit.attribute.Attribute;
@@ -8,6 +10,7 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
 public class WorldUtils {
@@ -56,7 +59,18 @@ public class WorldUtils {
             exception.printStackTrace();
         } finally {
             if (block.getType() != Material.AIR) {
-                block.breakNaturally(player.getInventory().getItemInMainHand());
+                if (NereusOpus.itemsadder) {
+                    if (CustomBlock.byAlreadyPlaced(block) != null) {
+                        CustomBlock.getLoot(block, player.getInventory().getItemInMainHand(), true).forEach((itemStack -> {
+                            block.getLocation().getWorld().dropItem(block.getLocation(), (ItemStack) itemStack);
+                        }));
+                        CustomBlock.remove(block.getLocation());
+                    } else {
+                        block.breakNaturally(player.getInventory().getItemInMainHand());
+                    }
+                } else {
+                    block.breakNaturally(player.getInventory().getItemInMainHand());
+                }
             }
         }
     }
