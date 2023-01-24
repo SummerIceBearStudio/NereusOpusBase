@@ -26,13 +26,15 @@ public class Farmhand extends EventExecutor {
             for (double z = -range + 1; z < range; z++) {
                 Location loc = event.getClickedBlock().getLocation().add(x, 0, z);
                 Block block = loc.getBlock();
+
+                if (block.getType() != Material.DIRT && block.getType() != Material.GRASS_BLOCK) {
+                    continue;
+                }
+
                 if (!MechanismUtils.checkPermission(this, block, player)) {
                     continue;
                 }
-                if (block.getType() == Material.DIRT
-                        || block.getType() == Material.GRASS_BLOCK) {
-                    block.setType(Material.FARMLAND);
-                }
+                block.setType(Material.FARMLAND);
             }
         }
     }

@@ -36,11 +36,13 @@ public class ListenerRegisterer {
         Bukkit.getPluginManager().registerEvents(new VillagerListener(), NereusOpus.plugin);
         Bukkit.getPluginManager().registerEvents(new AnvilListener(), NereusOpus.plugin);
 
-        NereusOpus.protocolManager.addPacketListener(new WindowItemPacketAdapter());
-        NereusOpus.protocolManager.addPacketListener(new SetSlotPacketAdapter());
-        NereusOpus.protocolManager.addPacketListener(new MerchantListPacketAdapter());
-        NereusOpus.protocolManager.addPacketListener(new SetCreativeSlotPacketAdapter());
-        NereusOpus.protocolManager.addPacketListener(new EnchantingTablePacket());
+        if (NereusOpus.display) {
+            NereusOpus.protocolManager.addPacketListener(new WindowItemPacketAdapter());
+            NereusOpus.protocolManager.addPacketListener(new SetSlotPacketAdapter());
+            NereusOpus.protocolManager.addPacketListener(new MerchantListPacketAdapter());
+            NereusOpus.protocolManager.addPacketListener(new SetCreativeSlotPacketAdapter());
+            NereusOpus.protocolManager.addPacketListener(new EnchantingTablePacket());
+        }
 
         String version = new ItemStack(Material.STONE).getItemMeta().getClass().getPackageName();
         if (version.contains("18")) {

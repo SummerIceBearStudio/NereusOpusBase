@@ -4,6 +4,8 @@ import hamsteryds.nereusopus.listeners.executors.EventExecutor;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 import java.io.File;
 
@@ -17,8 +19,9 @@ public class HealingCloseCombat extends EventExecutor {
         double heal=getValue("heal",level);
         Entity entity=event.getEntity();
         if(entity instanceof LivingEntity creature){
+            event.setDamage(0);
+            creature.addPotionEffect(new PotionEffect(PotionEffectType.GLOWING, 3, 1));
             creature.setHealth(Math.min(creature.getHealth()+heal,creature.getMaxHealth()));
-            event.setCancelled(true);
         }
     }
 }

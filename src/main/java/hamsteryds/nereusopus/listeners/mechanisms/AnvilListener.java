@@ -90,7 +90,7 @@ public class AnvilListener implements Listener {
         return new Pair(result, cost);
     }
 
-    @EventHandler(priority = EventPriority.HIGHEST)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onAnvil(PrepareAnvilEvent event) {
         AnvilInventory inv = event.getInventory();
         inv.setMaximumRepairCost(maxCost);
