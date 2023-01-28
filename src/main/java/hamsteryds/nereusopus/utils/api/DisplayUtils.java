@@ -57,7 +57,6 @@ public class DisplayUtils {
         for (Enchantment enchant : sorted) {
             result.put(enchant, enchants.get(enchant));
         }
-        long now = System.currentTimeMillis();
         return result;
     }
 
