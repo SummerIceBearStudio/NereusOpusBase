@@ -13,6 +13,7 @@ import hamsteryds.nereusopus.supports.HookNereusOpus;
 import hamsteryds.nereusopus.supports.InteractionVisualizerSupport;
 import hamsteryds.nereusopus.supports.OldVersionSupport;
 import hamsteryds.nereusopus.utils.api.*;
+import hamsteryds.nereusopus.utils.api.display.DisplayUtils;
 import hamsteryds.nereusopus.utils.gui.CustomInventoryHolder;
 import hamsteryds.nereusopus.utils.internal.TrieUtils;
 import org.bukkit.Bukkit;
@@ -69,6 +70,9 @@ public class NereusOpus extends JavaPlugin {
         logger.info("|- Loading Enchantments...");
         EnchantmentLoader.loadEnchantments();
 
+        logger.info("|- Loading Display Modules...");
+        DisplayUtils.initialize();
+
         logger.info("|- Registering Listeners...");
         ListenerRegisterer.loadListeners();
 
@@ -83,7 +87,11 @@ public class NereusOpus extends JavaPlugin {
             OldVersionSupport.initialize();
         }
         InteractionVisualizerSupport.initialize();
-        HookNereusOpus.initialize();
+        try {
+            HookNereusOpus.initialize();
+        } catch (NoClassDefFoundError ignored) {
+
+        }
 
         int pluginId = 16162;
         new Metrics(this, pluginId);
@@ -105,7 +113,11 @@ public class NereusOpus extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        HookNereusOpus.unInitialize();
+        try {
+            HookNereusOpus.unInitialize();
+        } catch (NoClassDefFoundError ignored) {
+
+        }
         for (Player player : Bukkit.getOnlinePlayers()) {
             InventoryView view = player.getOpenInventory();
             if (view.getTopInventory().getHolder() instanceof CustomInventoryHolder) {

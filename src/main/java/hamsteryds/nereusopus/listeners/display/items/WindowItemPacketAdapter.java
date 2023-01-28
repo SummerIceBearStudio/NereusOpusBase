@@ -6,7 +6,7 @@ import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
 import hamsteryds.nereusopus.NereusOpus;
-import hamsteryds.nereusopus.utils.api.DisplayUtils;
+import hamsteryds.nereusopus.utils.api.display.DisplayUtils;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.List;

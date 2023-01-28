@@ -7,7 +7,7 @@ import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
 import hamsteryds.nereusopus.NereusOpus;
 import hamsteryds.nereusopus.utils.api.ConfigUtils;
-import hamsteryds.nereusopus.utils.api.DisplayUtils;
+import hamsteryds.nereusopus.utils.api.display.DisplayUtils;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.MerchantRecipe;

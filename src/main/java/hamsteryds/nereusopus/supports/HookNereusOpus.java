@@ -1,6 +1,6 @@
 package hamsteryds.nereusopus.supports;
 
-import hamsteryds.nereusopus.utils.api.DisplayUtils;
+import hamsteryds.nereusopus.utils.api.display.DisplayUtils;
 import me.arasple.mc.trchat.module.internal.hook.HookPlugin;
 import me.arasple.mc.trchat.module.internal.hook.type.HookDisplayItem;
 import org.bukkit.Material;
@@ -18,6 +18,15 @@ import org.jetbrains.annotations.Nullable;
  */
 public class HookNereusOpus extends HookDisplayItem {
 
+    public static void initialize() {
+        final HookNereusOpus ner = new HookNereusOpus();
+        HookPlugin.INSTANCE.addHook(ner);
+    }
+
+    public static void unInitialize() {
+        HookPlugin.INSTANCE.getRegistry().removeIf(hook -> hook.getName().equals("NereusOpus"));
+    }
+
     @NotNull
     @Override
     public ItemStack displayItem(@NotNull final ItemStack itemStack, @Nullable final Player player) {
@@ -29,14 +38,5 @@ public class HookNereusOpus extends HookDisplayItem {
         } catch (Throwable ignored) {
             return itemStack;
         }
-    }
-
-    public static void initialize() {
-        final HookNereusOpus ner = new HookNereusOpus();
-        HookPlugin.INSTANCE.addHook(ner);
-    }
-
-    public static void unInitialize() {
-        HookPlugin.INSTANCE.getRegistry().removeIf(hook -> hook.getName().equals("NereusOpus"));
     }
 }

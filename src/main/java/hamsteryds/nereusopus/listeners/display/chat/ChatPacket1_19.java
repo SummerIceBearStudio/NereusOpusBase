@@ -7,7 +7,7 @@ import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
 import hamsteryds.nereusopus.NereusOpus;
-import hamsteryds.nereusopus.utils.api.DisplayUtils;
+import hamsteryds.nereusopus.utils.api.display.DisplayUtils;
 import hamsteryds.nereusopus.utils.api.NMSUtils;
 import net.kyori.adventure.nbt.api.BinaryTagHolder;
 import net.kyori.adventure.text.Component;
