@@ -26,6 +26,7 @@ public class Succession extends EventExecutor {
             new BukkitRunnable() {
                 @Override
                 public void run() {
+                    extra.setShooter(arrow.getShooter());
                     extra.setPickupStatus(AbstractArrow.PickupStatus.DISALLOWED);
                 }
             }.runTask(NereusOpus.plugin);
