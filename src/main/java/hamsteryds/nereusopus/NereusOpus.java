@@ -6,6 +6,7 @@ import hamsteryds.nereusopus.commands.Commands;
 import hamsteryds.nereusopus.commands.RandomCommand;
 import hamsteryds.nereusopus.enchants.EnchantmentLoader;
 import hamsteryds.nereusopus.enchants.skill.Xray;
+import hamsteryds.nereusopus.extensions.ExtensionLoader;
 import hamsteryds.nereusopus.listeners.ListenerRegisterer;
 import hamsteryds.nereusopus.listeners.executors.entries.BlockListener;
 import hamsteryds.nereusopus.listeners.executors.entries.CheckListeners;
@@ -78,6 +79,7 @@ public class NereusOpus extends JavaPlugin {
 
         logger.info("|- Loading Enchantments...");
         EnchantmentLoader.loadEnchantments();
+        ExtensionLoader.initialize();
 
         logger.info("|- Loading Display Modules...");
         DisplayUtils.initialize();
