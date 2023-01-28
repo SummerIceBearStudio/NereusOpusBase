@@ -10,7 +10,18 @@ import org.bukkit.event.entity.EntityDamageEvent;
 
 import java.util.List;
 
+/**
+ * <p>权限工具类</p>
+ *
+ */
 public class PermissionUtils implements Listener {
+    /**
+     * 是否有伤害权限
+     *
+     * @param damager 伤害来源
+     * @param entity  被伤害实体
+     * @return boolean  是否有伤害权限
+     */
     public static boolean hasDamagePermission(Entity damager, Entity entity) {
         if (neverCheck.contains(entity.getType())) return false;
         EntityDamageByEntityEvent event = new EntityDamageByEntityEvent(damager, entity, EntityDamageEvent.DamageCause.CUSTOM, 0.1);
