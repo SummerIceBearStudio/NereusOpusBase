@@ -149,10 +149,10 @@ public class EnchantmentDisplay extends DisplayAdaptor {
         Map<Enchantment, Integer> enchants;
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
 
-        //防止二次生成lore，赘余代码，待测试是否必要
-        if (pdc.has(loreKey_1, PersistentDataType.STRING)) {
-            return item;
-        }
+//        //TODO 防止二次生成lore，赘余代码，待测试是否必要
+//        if (pdc.has(loreKey_1, PersistentDataType.STRING)) {
+//            return item;
+//        }
 
         if (meta instanceof EnchantmentStorageMeta enchantMeta) {
             pdc.set(hideFlag, PersistentDataType.INTEGER, meta.hasItemFlag(ItemFlag.HIDE_POTION_EFFECTS) ? 1 : 0);
