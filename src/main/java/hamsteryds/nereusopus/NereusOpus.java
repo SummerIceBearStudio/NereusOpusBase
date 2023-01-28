@@ -17,7 +17,6 @@ import hamsteryds.nereusopus.utils.api.display.DisplayUtils;
 import hamsteryds.nereusopus.utils.gui.CustomInventoryHolder;
 import hamsteryds.nereusopus.utils.internal.TrieUtils;
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -138,7 +137,7 @@ public class NereusOpus extends JavaPlugin {
             if (view.getTopInventory().getHolder() instanceof CustomInventoryHolder) {
                 player.closeInventory();
             }
-            player.kick();
+            player.kickPlayer("§c服务器重载插件，请重新进入！");
         }
         Xray.shulkers.values().forEach((UUID uuid) -> {
             Entity entity = Bukkit.getEntity(uuid);

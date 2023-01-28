@@ -30,11 +30,9 @@ public class DisplayUtils {
         }
 
         for (String adaptorName : adaptors.keySet()) {
-            System.out.println("改动前：" + item);
             item = adaptors.get(adaptorName).adapt(item);
         }
 
-        System.out.println("改动后：" + item);
         return item;
     }
 
@@ -47,9 +45,7 @@ public class DisplayUtils {
         }
 
         for (String adaptorName : adaptors.keySet()) {
-            System.out.println("恢复前：" + item);
             item = adaptors.get(adaptorName).revert(item);
-            System.out.println("恢复后：" + item);
         }
 
         return item;
