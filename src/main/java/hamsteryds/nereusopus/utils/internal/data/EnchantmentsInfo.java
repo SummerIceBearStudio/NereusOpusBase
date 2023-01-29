@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class EnchantmentsInfo implements Serializable {
+public class  EnchantmentsInfo implements Serializable {
     private Set<SerializablePair<String, Integer>> infos;
 
     public EnchantmentsInfo() {
