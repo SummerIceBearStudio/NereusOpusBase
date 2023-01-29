@@ -5,12 +5,21 @@ import hamsteryds.nereusopus.utils.api.StringUtils;
 import java.math.RoundingMode;
 import java.util.*;
 
+/**
+ * <p>数学工具类</p>
+ */
 public class MathUtils {
     private static final int[] operatePriority = new int[]{0, 3, 2, 1, -1, 1, 0, 2};
     private static final List<String> symbols = Arrays.asList(">=", "<=", ">", "<", "=", "!=");
     private static Stack<String> postfixStack = new Stack<>();
     private static Stack<Character> opStack = new Stack<>();
 
+    /**
+     * 判断表达式是否为真
+     *
+     * @param expression 表达式
+     * @return boolean 是否为真
+     */
     public static boolean isTrue(String expression) {
         for (String symbol : symbols) {
             if (expression.contains(symbol)) {
@@ -36,6 +45,13 @@ public class MathUtils {
         return true;
     }
 
+    /**
+     * 计算表达式
+     *
+     * @param expression 表达式
+     * @param params     参数
+     * @return double 计算结果
+     */
     @SafeVarargs
     public static <E> double calculate(String expression, E... params) {
         try {
@@ -49,6 +65,13 @@ public class MathUtils {
         }
     }
 
+    /**
+     * 计算表达式
+     *
+     * @param expression 表达式
+     * @param params     参数
+     * @return double 计算结果
+     */
     public static double calculate(String expression, Map<String, String> params) {
         try {
             expression = StringUtils.replace(expression, params);
@@ -61,6 +84,14 @@ public class MathUtils {
         }
     }
 
+    /**
+     * 将数字转化为罗马数字
+     *
+     * @param number  数
+     * @param ignoreI 忽略I
+     * @return <p>对应的罗马数字</p>
+     *         <p>若输入的数字大于3999或小于1，则输出-1</p>
+     */
     public static String numToRoman(int number, boolean ignoreI) {
         StringBuilder rNumber = new StringBuilder();
         int[] aArray = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
