@@ -18,13 +18,25 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Map;
 import java.util.Objects;
 
-public class PdcUtils {
+/**
+ * <p>PDC工具类</p>
+ *
+ */
+public class PDCUtils {
+     /**
+      * 是否开启PDC保存功能
+      */
     public static Boolean saveToPDC;
 
     static {
         saveToPDC = ConfigUtils.config.getBoolean("save.save_to_pdc");
     }
 
+    /**
+     * 保存玩家附魔至PDC
+     *
+     * @param player 玩家
+     */
     public static void savePlayerEnchants(Player player) {
         PlayerInventory inv = player.getInventory();
         for (int i = 0; i < inv.getSize(); i++) {
@@ -63,6 +75,11 @@ public class PdcUtils {
         NereusOpus.logger.info("Save player(name : " + player.getName() + ") enchants successfully!");
     }
 
+    /**
+     * 从PDC加载玩家附魔
+     *
+     * @param player 玩家
+     */
     public static void loadPlayerEnchants(Player player) {
         PlayerInventory inv = player.getInventory();
         NereusOpus.logger.info("Start loading player(name : " + player.getName() + ") enchants...");
@@ -106,6 +123,14 @@ public class PdcUtils {
         NereusOpus.logger.info("Load player(name : " + player.getName() + ") enchants successfully!");
     }
 
+    /**
+     * 读取物品PDC内容
+     *
+     * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @param key  <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>
+     * @param type 数据类型
+     * @return PDC的数据（没有则为 {@code null}）
+     */
     public static <T> T read(@NotNull ItemStack item, NamespacedKey key, PersistentDataType<T, T> type) {
         ItemMeta meta = item.getItemMeta();
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
@@ -115,6 +140,15 @@ public class PdcUtils {
         return null;
     }
 
+    /**
+     * 写入物品PDC内容
+     *
+     * @param item  物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @param key   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>
+     * @param type  数据类型
+     * @param value 值
+     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     */
     public static <T> ItemStack write(@NotNull ItemStack item, NamespacedKey key, PersistentDataType<T, T> type, T value) {
         ItemMeta meta = item.getItemMeta();
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
@@ -126,6 +160,13 @@ public class PdcUtils {
         return item;
     }
 
+    /**
+     * 将物品附魔写入PDC中
+     *
+     * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @param info 附魔信息
+     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     */
     public static ItemStack writeEnchants(@NotNull ItemStack item, EnchantmentsInfo info) {
         ItemMeta meta = item.getItemMeta();
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
@@ -138,6 +179,12 @@ public class PdcUtils {
         return item;
     }
 
+    /**
+     * 读取物品PDC中的附魔信息
+     *
+     * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return 附魔信息
+     */
     public static EnchantmentsInfo readEnchants(@NotNull ItemStack item) {
         ItemMeta meta = item.getItemMeta();
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
@@ -148,6 +195,11 @@ public class PdcUtils {
         return null;
     }
 
+    /**
+     * 清除物品附魔
+     *
+     * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     */
     public static void clearEnchants(@NotNull ItemStack item) {
         ItemMeta meta = item.getItemMeta();
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
