@@ -85,7 +85,7 @@ public class MathUtils {
     }
 
     /**
-     * 将数字转化为罗马数字
+     * 将阿拉伯数字转化为罗马数字
      *
      * @param number  数
      * @param ignoreI 忽略I
