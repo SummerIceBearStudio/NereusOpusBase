@@ -12,6 +12,9 @@ import org.bukkit.inventory.*;
 
 import java.util.HashMap;
 
+/**
+ * <p>背包工具类</p>
+ */
 public class InventoryUtils {
     public static final EquipmentSlot[] ARMORS = new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
     public static final EquipmentSlot[] HANDS = new EquipmentSlot[]{EquipmentSlot.HAND, EquipmentSlot.OFF_HAND};
