@@ -10,11 +10,12 @@ import java.util.Map;
  */
 public class StringUtils {
     /**
-     * 字符串替换
+     * <p>字符串替换</p>
+     * <p>参数格式：两个为一组，表示将前一个替换为后一个</p>
      *
      * @param origin 原始字符串
      * @param params 参数
-     * @return 替换后的字符串{@link String}
+     * @return {@link String} - 替换后的字符串
      */
     @SafeVarargs
     public static <E> String replace(String origin, E... params) {
@@ -29,7 +30,7 @@ public class StringUtils {
      *
      * @param origin 原始字符串
      * @param params 参数
-     * @return 替换后的字符串{@link String}
+     * @return {@link String} - 替换后的字符串
      */
     public static <E> String replace(String origin, Map<String, String> params) {
         for (String key : params.keySet()) {
@@ -56,7 +57,7 @@ public class StringUtils {
      * 删除字符串格式
      *
      * @param legacy 字符串
-     * @return 删除格式后的字符串{@link String}
+     * @return {@link String} - 删除格式后的字符串
      */
     public static String removeFormat(String legacy) {
         return ChatColor.stripColor(legacy);
@@ -66,7 +67,7 @@ public class StringUtils {
      * 大写首字母
      *
      * @param legacy 字符串
-     * @return 大写首字母后的字符串{@link String}
+     * @return {@link String} - 大写首字母后的字符串
      */
     public static String upperFirstLetter(String legacy) {
         return legacy.substring(0, 1).toLowerCase() + legacy.substring(1);

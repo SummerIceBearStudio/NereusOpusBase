@@ -9,7 +9,9 @@ import org.bukkit.scoreboard.Team;
 import java.util.HashMap;
 
 
-
+/**
+ * 颜色工具类
+ */
 public class ColorUtils {
     private static final HashMap<ChatColor, Team> coloredTeams = new HashMap<>();
 
@@ -26,9 +28,10 @@ public class ColorUtils {
     }
 
     /**
+     * 通过颜色获得Team类
      *
      * @param color 颜色
-     * @return 通过颜色获取的Team类
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/scoreboard/Team.html">{@code Team}</a> - 通过颜色获取的Team类
      */
 
     public static Team getTeamByColor(ChatColor color) {

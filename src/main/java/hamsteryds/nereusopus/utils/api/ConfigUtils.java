@@ -12,9 +12,19 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.*;
 
+/**
+ * 配置工具类
+ */
 public class ConfigUtils {
+    /**
+     * 配置文件
+     * @see <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/FileConfiguration.html">{@code FileConfiguration}</a>
+     */
     public static FileConfiguration config;
 
+    /**
+     * 初始化
+     */
     public static void initialize() {
         Set<String> set = new HashSet<String>();
         set.add("limitcheck");
@@ -95,10 +105,26 @@ public class ConfigUtils {
         return null;
     }
 
+    /**
+     * 自动更新配置
+     *
+     * @param directory 配置路径
+     * @param name      名字
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html">{@code YamlConfiguration}</a> - 更新后的配置
+     */
     public static YamlConfiguration autoUpdateConfigs(String directory, String name) {
         return autoUpdateConfigs(directory, name, null, true);
     }
 
+    /**
+     * 自动更新配置
+     *
+     * @param directory   配置路径
+     * @param name        名字
+     * @param paths       需要更新的路径
+     * @param updateOrNot 是否要更新
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html">{@code YamlConfiguration}</a> - 更新后的配置
+     */
     public static YamlConfiguration autoUpdateConfigs(String directory, String name, Set<String> paths, boolean updateOrNot) {
         File file = NereusOpus.getFolder(directory, name);
         if (!file.exists()) {
@@ -181,6 +207,9 @@ public class ConfigUtils {
         }
     }
 
+    /**
+     * 打印信息
+     */
     public static void printInfo() {
         File file = NereusOpus.getFolder("", "附魔大全.yml");
         if (file.exists()) {

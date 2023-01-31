@@ -18,7 +18,7 @@ public class MathUtils {
      * 判断表达式是否为真
      *
      * @param expression 表达式
-     * @return boolean 是否为真
+     * @return boolean - 是否为真
      */
     public static boolean isTrue(String expression) {
         for (String symbol : symbols) {
@@ -50,7 +50,7 @@ public class MathUtils {
      *
      * @param expression 表达式
      * @param params     参数
-     * @return double 计算结果
+     * @return double - 计算结果
      */
     @SafeVarargs
     public static <E> double calculate(String expression, E... params) {
@@ -70,7 +70,7 @@ public class MathUtils {
      *
      * @param expression 表达式
      * @param params     参数
-     * @return double 计算结果
+     * @return double - 计算结果
      */
     public static double calculate(String expression, Map<String, String> params) {
         try {
@@ -89,7 +89,7 @@ public class MathUtils {
      *
      * @param number  数
      * @param ignoreI 忽略I
-     * @return <p>对应的罗马数字</p>
+     * @return <p>{@link String} - 对应的罗马数字</p>
      *         <p>若输入的数字大于3999或小于1，则输出-1</p>
      */
     public static String numToRoman(int number, boolean ignoreI) {

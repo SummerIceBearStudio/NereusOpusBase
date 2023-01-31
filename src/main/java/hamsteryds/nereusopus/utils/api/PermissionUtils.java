@@ -20,7 +20,7 @@ public class PermissionUtils implements Listener {
      *
      * @param damager 伤害来源
      * @param entity  被伤害实体
-     * @return boolean  是否有伤害权限
+     * @return boolean - 是否有伤害权限
      */
     public static boolean hasDamagePermission(Entity damager, Entity entity) {
         if (neverCheck.contains(entity.getType())) return false;

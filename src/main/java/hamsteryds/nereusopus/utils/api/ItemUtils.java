@@ -64,7 +64,7 @@ public class ItemUtils {
      * @param type        物品类型
      * @param displayName 显示名称
      * @param lore        物品的lore
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack make(Material type, String displayName, String... lore) {
         return make(type, displayName, Arrays.asList(lore));
@@ -77,7 +77,7 @@ public class ItemUtils {
      * @param amount      物品数量
      * @param displayName 显示名称
      * @param lore        物品的lore
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack make(Material type, int amount, String displayName, String... lore) {
         ItemStack item = make(type, displayName, Arrays.asList(lore));
@@ -91,7 +91,7 @@ public class ItemUtils {
      * @param type        物品类型
      * @param displayName 显示名称
      * @param lore        物品的lore
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack make(Material type, String displayName, List<String> lore) {
         ItemStack item = new ItemStack(type);
@@ -111,7 +111,7 @@ public class ItemUtils {
      *
      * @param item    物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
      * @param percent 耐久度百分比
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack addDurability(ItemStack item, double percent) {
         if (percent < 1 && percent > 0) {
@@ -127,7 +127,7 @@ public class ItemUtils {
      *
      * @param item    物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
      * @param point   增加的耐久度
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack addDurability(ItemStack item, short point) {
         if (item == null || !isDamageable(item)) {
@@ -150,7 +150,7 @@ public class ItemUtils {
      * 判断物品是否损坏（耐久度为0）
      *
      * @param itemStack 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
-     * @return boolean 是否损坏
+     * @return boolean - 是否损坏
      */
     public static boolean isDamageable(ItemStack itemStack) {
         return itemStack.getType().getMaxDurability() > 0;
@@ -160,7 +160,7 @@ public class ItemUtils {
      * 创建附魔书
      *
      * @param enchants 附魔
-     * @return 附魔书的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 附魔书的 ItemStack
      */
     @SafeVarargs
     public static ItemStack makeEnchantedBook(Pair<Enchantment, Integer>... enchants) {
@@ -177,7 +177,7 @@ public class ItemUtils {
      * 判断是否可以磨砂
      *
      * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
-     * @return boolean 是否可以磨砂
+     * @return boolean - 是否可以磨砂
      */
     public static boolean grindstoneable(ItemStack item) {
         if (item == null) {
@@ -202,7 +202,7 @@ public class ItemUtils {
      *
      * @param item       物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
      * @param headBase64 头颅的base64编码
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack setSkull(ItemStack item, String headBase64) {
         if (item.getItemMeta() instanceof SkullMeta meta) {
@@ -223,7 +223,7 @@ public class ItemUtils {
      * 具体规则请参阅配置文件下的{@code display.item}属性
      *
      * @param string 字符串
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack fromString(String string) {
         String[] splited = string.replace("&", "§").split(";");
@@ -289,7 +289,7 @@ public class ItemUtils {
      * 得到物品的lore
      *
      * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
-     * @return {@link List}&lt;{@link String}&gt; lore
+     * @return {@link List}&lt;{@link String}&gt; - lore
      */
     public static List<String> getLore(ItemStack item) {
         if (item != null) {
@@ -306,7 +306,7 @@ public class ItemUtils {
      * 得到物品的显示名称
      *
      * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
-     * @return {@link String} 显示名称
+     * @return {@link String} - 显示名称
      */
     public static String getDisplayName(ItemStack item) {
         if (item != null) {
@@ -324,7 +324,7 @@ public class ItemUtils {
      *
      * @param item  物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
      * @param clazz clazz
-     * @return int 附魔等级
+     * @return int - 附魔等级
      */
     public static int getEnchantLevel(ItemStack item, Class<? extends AbstractEnchantment> clazz) {
         return item.getEnchantmentLevel(EnchantmentUtils.fromID(clazz.getSimpleName()));
@@ -335,7 +335,7 @@ public class ItemUtils {
      *
      * @param item  物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
      * @param id    附魔的id
-     * @return int 附魔等级
+     * @return int - 附魔等级
      */
     public static int getEnchantLevel(ItemStack item, String id) {
         return item.getEnchantmentLevel(EnchantmentUtils.fromID(id));
@@ -346,7 +346,7 @@ public class ItemUtils {
      *
      * @param item  物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
      * @param added 耐久度
-     * @return {@link ItemStack}
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack addDurability(ItemStack item, int added) {
         ItemMeta meta = item.getItemMeta();
@@ -371,7 +371,7 @@ public class ItemUtils {
      * 获得材质
      *
      * @param name 材质名称
-     * @return {@link Material} 材质
+     * @return {@link Material} - 材质
      */
     public static Material getMaterial(String name) {
         try {

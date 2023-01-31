@@ -129,7 +129,7 @@ public class PDCUtils {
      * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
      * @param key  <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>
      * @param type 数据类型
-     * @return PDC的数据（没有则为 {@code null}）
+     * @return T - PDC的数据（没有则为 {@code null}）
      */
     public static <T> T read(@NotNull ItemStack item, NamespacedKey key, PersistentDataType<T, T> type) {
         ItemMeta meta = item.getItemMeta();
@@ -147,7 +147,7 @@ public class PDCUtils {
      * @param key   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>
      * @param type  数据类型
      * @param value 值
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static <T> ItemStack write(@NotNull ItemStack item, NamespacedKey key, PersistentDataType<T, T> type, T value) {
         ItemMeta meta = item.getItemMeta();
@@ -165,7 +165,7 @@ public class PDCUtils {
      *
      * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
      * @param info 附魔信息
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     public static ItemStack writeEnchants(@NotNull ItemStack item, EnchantmentsInfo info) {
         ItemMeta meta = item.getItemMeta();
@@ -183,7 +183,7 @@ public class PDCUtils {
      * 读取物品PDC中的附魔信息
      *
      * @param item 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
-     * @return 附魔信息
+     * @return {@link EnchantmentsInfo} - 附魔信息
      */
     public static EnchantmentsInfo readEnchants(@NotNull ItemStack item) {
         ItemMeta meta = item.getItemMeta();

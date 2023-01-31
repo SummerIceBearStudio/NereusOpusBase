@@ -149,7 +149,7 @@ public class WorldUtils {
      * 获取粒子
      *
      * @param name 粒子名字
-     * @return 粒子 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html">{@link Particle}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html">{@link Particle}</a> - 粒子
      */
     public static Particle getParticle(String name) {
         try {
@@ -164,7 +164,7 @@ public class WorldUtils {
      * <p>字符串格式：世界名字,x坐标,y坐标,z坐标</p>
      *
      * @param loc 位置
-     * @return 对应的字符串{@link String}
+     * @return {@link String} - 对应的字符串
      */
     public static String locToString(Location loc) {
         return loc.getWorld().getName() + "," + loc.getBlockX() + "," + loc.getBlockY() + "," + loc.getBlockZ();
@@ -175,7 +175,7 @@ public class WorldUtils {
      * <p>字符串格式：世界名字,x坐标,y坐标,z坐标</p>
      *
      * @param string 字符串
-     * @return 位置 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html">{@link Location}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html">{@link Location}</a> - 位置
      */
     public static Location stringToLoc(String string) {
         String[] splited = string.split(",");
@@ -190,7 +190,7 @@ public class WorldUtils {
      * 速度是否不安全
      *
      * @param vector 速度向量 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/util/Vector.html">{@code vector}</a>
-     * @return boolean 是否不安全
+     * @return boolean - 是否不安全
      */
     public static boolean isUnsafeVelocity(Vector vector) {
         final double x = vector.getBlockX();
@@ -207,7 +207,7 @@ public class WorldUtils {
      * 转换为安全速度
      *
      * @param vector 速度向量 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/util/Vector.html">{@code vector}</a>
-     * @return 安全的速度向量 速度向量 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/util/Vector.html">{@code vector}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/util/Vector.html">{@code vector}</a> - 安全的速度向量
      */
     public static Vector convertToSafeVelocity(Vector vector) {
         final double x = vector.getX();

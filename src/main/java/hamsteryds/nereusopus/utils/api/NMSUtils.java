@@ -16,7 +16,7 @@ public class NMSUtils {
      * 获取类
      *
      * @param name 类名
-     * @return {@link Class<?>}
+     * @return {@link Class<?>} - 类
      */
     public static Class<?> getClass(String name) {
         try {

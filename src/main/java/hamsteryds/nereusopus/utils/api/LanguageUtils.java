@@ -36,7 +36,7 @@ public class LanguageUtils {
      *
      * @param path   路径
      * @param params 参数
-     * @return 物品的 <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a>
+     * @return <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html">{@code ItemStack}</a> - 物品的 ItemStack
      */
     @SafeVarargs
     public static <E> ItemStack getItem(String path, E... params) {
@@ -57,7 +57,7 @@ public class LanguageUtils {
      *
      * @param path   路径
      * @param params 参数
-     * @return {@link String} 语言
+     * @return {@link String} - 语言
      */
     @SafeVarargs
     public static <E> String getLang(String path, E... params) {
@@ -70,7 +70,7 @@ public class LanguageUtils {
      *
      * @param path   路径
      * @param params 参数个数
-     * @return <p>{@link List}&lt;{@link String}&gt; 语言列表</p>
+     * @return {@link List}&lt;{@link String}&gt; - 语言列表
      */
     @SafeVarargs
     public static <E> List<String> getLangs(String path, E... params) {
@@ -85,7 +85,7 @@ public class LanguageUtils {
      * 解析Papi表达式
      *
      * @param expression 表达式
-     * @return {@link String} 翻译结果
+     * @return {@link String} - 翻译结果
      */
     public static String translatePapiExpression(String expression) {
         for (String holder : papiHolders.keySet()) {
@@ -100,7 +100,7 @@ public class LanguageUtils {
      * @param param      参数
      * @param expression 表达式
      * @param level      等级
-     * @return {@link String} 翻译结果
+     * @return {@link String} - 翻译结果
      */
     public static String translateEnchantParam(String param, String expression, int... level) {
         String result = enchantParams.get(param);

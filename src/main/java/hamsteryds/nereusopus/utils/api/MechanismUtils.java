@@ -40,7 +40,7 @@ public class MechanismUtils {
      * @param key    技能名字
      * @param cd     技能cd
      * @param info   是否向玩家发送冷却信息
-     * @return boolean 技能是否已冷却
+     * @return boolean - 技能是否已冷却
      */
     public static boolean checkCooldown(Player player, String key, double cd, boolean info) {
         UUID uuid = player.getUniqueId();
@@ -95,7 +95,7 @@ public class MechanismUtils {
      *
      * @param enchant 附魔
      * @param level   附魔等级
-     * @return boolean 是否能触发
+     * @return boolean - 是否能触发
      */
     public static boolean checkPercent(CustomEnchantment enchant, int level) {
         return Math.random() * 100 <= enchant.getValue("chance", level, 100 + "");
@@ -106,7 +106,7 @@ public class MechanismUtils {
      *
      * @param enchant 附魔
      * @param entity  触发附魔的实体
-     * @return boolean 是否能触发
+     * @return boolean - 是否能触发
      */
     public static boolean checkRequireFull(CustomEnchantment enchant, LivingEntity entity) {
         if (!(entity instanceof Player player)) {
@@ -124,7 +124,7 @@ public class MechanismUtils {
      * @param enchant  附魔
      * @param block    方块
      * @param creature 触发附魔的生物
-     * @return boolean 是否有权限
+     * @return boolean - 是否有权限
      */
     public static boolean checkPermission(CustomEnchantment enchant, Block block, LivingEntity creature, boolean... flag) {
         if (creature instanceof Player player) {
@@ -155,7 +155,7 @@ public class MechanismUtils {
      * 检查攻击者是否在掉落过程中
      *
      * @param attacker 攻击者
-     * @return boolean 是否在掉落过程中
+     * @return boolean - 是否在掉落过程中
      */
     public static boolean checkCritical(Entity attacker) {
         return attacker.getFallDistance() > 0 && !attacker.isOnGround();
@@ -166,7 +166,7 @@ public class MechanismUtils {
      *
      * @param enchant 附魔
      * @param entity   实体
-     * @return boolean 是否能触发
+     * @return boolean - 是否能触发
      */
     public static boolean checkShiftIgnored(CustomEnchantment enchant, LivingEntity entity) {
         if (!(entity instanceof Player player)) {

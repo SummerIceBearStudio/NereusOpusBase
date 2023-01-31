@@ -9,7 +9,7 @@ import org.bukkit.persistence.PersistentDataType;
  */
 public class NBTUtils {
     /**
-     * 写入NBT标签
+     * 写入 NBT 标签
      *
      * @param space <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>的 {@code key}
      * @param pdc   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/persistence/PersistentDataContainer.html">{@code pdc}</a>
@@ -26,7 +26,7 @@ public class NBTUtils {
     }
 
     /**
-     * 清除NBT标签
+     * 清除 NBT 标签
      * @param space <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>的 {@code key}
      * @param pdc   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/persistence/PersistentDataContainer.html">{@code pdc}</a>
      * @param type  数据类型
@@ -40,11 +40,11 @@ public class NBTUtils {
     }
 
     /**
-     * 读取NBT标签
+     * 读取 NBT 标签
      * @param space <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>的 {@code key}
      * @param pdc   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/persistence/PersistentDataContainer.html">{@code pdc}</a>
      * @param type  数据类型
-     * @return {@link Z} NBT标签的值
+     * @return {@link Z} - NBT标签的值
      *
      * @see <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>
      * @see <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/persistence/PersistentDataContainer.html">{@code PersistentDataContainer}</a>
@@ -55,12 +55,12 @@ public class NBTUtils {
     }
 
     /**
-     * 是否有NBT标签
+     * 是否有 NBT 标签
      *
      * @param space <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>的 {@code key}
      * @param pdc   <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/persistence/PersistentDataContainer.html">{@code pdc}</a>
      * @param type  数据类型
-     * @return boolean
+     * @return boolean - 是否有 NBT 标签
      *
      * @see <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/NamespacedKey.html">{@code NamespacedKey}</a>
      * @see <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/persistence/PersistentDataContainer.html">{@code PersistentDataContainer}</a>

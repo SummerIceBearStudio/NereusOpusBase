@@ -26,6 +26,7 @@ import java.io.IOException;
 import java.util.Locale;
 import java.util.Set;
 
+
 public abstract class AbstractEnchantment extends Enchantment {
     protected final File file;
     protected final YamlConfiguration config;
