@@ -15,19 +15,13 @@ import java.util.List;
 import java.util.Objects;
 
 public class TrieUtils {
-    public static Trie opCommands;
-    public static Trie playerCommands;
     public static Trie onlinePlayers;
     public static Trie offlinePlayers;
     public static Trie rarities;
     public static Trie types;
     public static Trie enchants;
-    public static Trie status;
 
     static public void init() {
-        opCommands = new Trie(Commands.opCommands);
-        playerCommands = new Trie(Commands.playerCommands);
-        assert opCommands != null;
 
         onlinePlayers = new Trie();
         for (Player player : Bukkit.getOnlinePlayers()) {
@@ -60,7 +54,5 @@ public class TrieUtils {
             String displayName = StringUtils.removeFormat(enchantment.displayName());
             enchants.addWord(displayName);
         }
-
-        status = new Trie(DisableCommand.statusList);
     }
 }

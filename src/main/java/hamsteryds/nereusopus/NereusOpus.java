@@ -3,6 +3,8 @@ package hamsteryds.nereusopus;
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;
 import hamsteryds.nereusopus.commands.Commands;
+import hamsteryds.nereusopus.commands.EnchantCommand;
+import hamsteryds.nereusopus.commands.InfoCommand;
 import hamsteryds.nereusopus.commands.RandomCommand;
 import hamsteryds.nereusopus.enchants.EnchantmentLoader;
 import hamsteryds.nereusopus.enchants.skill.Xray;
@@ -93,8 +95,10 @@ public class NereusOpus extends JavaPlugin {
         display = config.getBoolean("display.enable", true);
 
         logger.info("|- Registering Commands...");
+        Commands.initialize();
         RandomCommand.initialize();
         TrieUtils.init();
+
         plugin.getCommand("nereusopus").setExecutor(new Commands());
 
         logger.info("|- Hooking to Soft Depend Plugins...");

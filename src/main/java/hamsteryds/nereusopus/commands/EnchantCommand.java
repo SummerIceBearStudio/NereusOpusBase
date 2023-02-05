@@ -1,5 +1,6 @@
 package hamsteryds.nereusopus.commands;
 
+import hamsteryds.nereusopus.commands.api.*;
 import hamsteryds.nereusopus.utils.api.EnchantmentUtils;
 import hamsteryds.nereusopus.utils.api.InventoryUtils;
 import hamsteryds.nereusopus.utils.api.ItemUtils;
@@ -11,12 +12,18 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
-public class EnchantCommand {
-    public static void enchant(CommandSender sender, Player player, String enchantName, int level) {
-        Enchantment enchant = EnchantmentUtils.findEnchantByName(enchantName);
+public class EnchantCommand extends AbstractCommand {
+    public static final List<AbstractArgument> arguments = Arrays.asList(
+            new AbstractArgument(ArgumentType.ENCHANT),
+            new AbstractArgument(ArgumentType.NUMBER, "[等级]"),
+            new AbstractArgument(ArgumentType.PLAYER)
+    );;
+
+    @Override
+    public void execute(CommandSender sender, String[] args) {
+        Enchantment enchant = EnchantmentUtils.findEnchantByName(args[1]);
         if (enchant == null) {
             sender.sendMessage(LanguageUtils.getLang("no_enchantment"));
             return;
@@ -25,6 +32,12 @@ public class EnchantCommand {
 //            sender.sendMessage(LanguageUtils.getLang("exceed_max_level", "{level}", enchant.getMaxLevel()));
 //            return;
 //        }
+        Player player = CommandUtils.toPlayer(sender, args, 3);
+        if (player == null) {
+            sender.sendMessage(LanguageUtils.getLang("player_not_found"));
+            return;
+        }
+        int level = Integer.parseInt(args[2]);
         ItemStack item = player.getItemInHand();
         ItemMeta meta = item.getItemMeta();
         if (meta == null) {
