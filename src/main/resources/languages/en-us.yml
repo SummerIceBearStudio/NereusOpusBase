@@ -1,0 +1,148 @@
+prefix: "§7§l[§a§lNereusOpus§7§l] "
+celebrate_message: "§7Congratulation to §e{player} §7for enchanting {enchant}§7, rarity: {rarity}"
+celebrate_title: "§eCongratulation {player}"
+celebrate_subtitle: "§7Enchanted {enchant}§7, rarity: {rarity}"
+successfully_remove_extra: "§aOperation succeeded: §7The enchanting extra of the item on your hand have been cleared!"
+successfully_set_extra: "§aOperation succeeded: §7The enchanting extra of the item on your hand have been added!"
+successfully_add_enchant: "§aOperation succeeded: §7Successfully add enchantment {enchant}§7 to the item you hold, rarity: {level}"
+successfully_remove_enchant: "§aOperation succeed: §7Successfully remove enchantment for the item you hold."
+successfully_give_book: "§aOperation succeeded: §7The enchantment book has been given to you."
+disabled_successfully: "§aOperation succeeded: §7The enchantment enabling status has been set to %status%"
+
+not_a_player: "§7Operation failed: §cOnly players can perform this command!"
+invalid_param_amount: "§7Operation failed: §cWrong number of parameters!"
+invalid_param_type: "§7Operation failed: §cThe parameter must be an integer!"
+player_not_found: "§7Operation failed: §cThe player is offline or does not exist!"
+enchant_not_found: "§7Operation failed: §cThe enchantment does not exist or have not been loaded!"
+rarity_not_found: "§7Operation failed: §cThe rarity does not exist!"
+type_not_found: "§7Operation failed: §cThe type does not exist!"
+no_permission: "§7Operation failed: §cYou do not have permission!"
+send_successfully: "§7Operation succeeded: §aThe enchantment book has been sent to the player's inventory (or dropped at the player's location)!"
+no_item_in_hand: "§7Operation failed: §7There is nothing in player's hand!"
+no_enchantment: "§cOperation failed: §7The enchantment does not exist!"
+exceed_max_level: "§cOperation failed: §7Exceeded the max level: §c{level}"
+cannot_disable_vanilla: "§cOperation failed: §7You can't enable or disable the vanilla enchantment!"
+player_not_exist: "§7Operation failed: §cPlayer §b{name} §cis missing!"
+
+help:
+  - "§aNereusOpus §7Helper: §aMade By SummerIceBearStudio"
+  - "§6★ §7 /nereusopus help - §eView the command helper"
+  - "§6★ §7 /nereusopus random [rarity] [player] - §eGive player a random enchantment book"
+  - "§6★ §7 /nereusopus info <enchantment> - §eView the basic information of the enchantment"
+  - "§6★ §7 /nereusopus enchant <enchantment> [rarity] [player] - §eGet the enchantment book (empty hand) or enchant the item you hold"
+  - "§6★ §7 /nereusopus book <enchantment> [rarity] [player] - §eGet the enchantment book"
+  - "§6★ §7 /nereusopus disable <enchantment> <status(disable/enable)> - §eDisable (or enable) an enchantment temporary"
+
+help_not_op:
+  - "§aNereusOpus §7Helper: §aMade By SummerIceBearStudio"
+  - "§6★ §7 /nereusopus help - §eView the command helper"
+  - "§6★ §7 /nereusopus info <enchantment> - §eView the basic information of the enchantment"
+
+info:
+  - "§8| §7Enchantment name: {displayname}"
+  - "§8| §7Enchantment rarity: {rarity}"
+  - "§8| §7Enchantment description: {description}"
+
+type:
+  vanilla: "§bvanilla"
+  curse: "§ccurse"
+  simple: "§asimple"
+  skill: "§bskill"
+  artifact: "§eartifact"
+
+type_item:
+  type: PLAYER_HEAD
+  name: "{type}"
+  lore:
+    - "§8| Click to open enchantment list of this type"
+custom_item:
+  type: ENCHANTED_BOOK
+  name: "{displayname}"
+  lore:
+    - "§8| §7Rarity: {rarity}"
+    - "§8| §7Targets: §b{targets}"
+    - "§8| §7Level: {level} / §c{maxlevel}"
+    - "§8| §7Description: {description}"
+
+conflict_item:
+  type: ANVIL
+  name: "§bEnchantment dependency"
+  denied_name: "§8| §7Item name: §e{denied_name}"
+  denied_lore:
+    start: "§8| §7Description: "
+    contents: "    §7- {line}"
+  denied_enchants:
+    start: "§8| §7Enchantments: "
+    contents: "    §7- {enchant} {roman}"
+  non-conflict: "§8| §7No conflict"
+  has-conflict: "§8| §7Can't get enchantment when you meet any requirements (Expect getting enchantment book)"
+
+enchant_params:
+  amount: "Amount: §a{value}"
+  chance: "Chance: §a{value}%"
+  repeat-ticks: "Repeat ticks: §a{value} ticks"
+  durability-decrease: "Durability decrease: §a{value}"
+  durability-increase: "Durability increase: §a{value}"
+  durability-decrease-extra: "Durability decrease extra: §a{value}"
+  require-full-charge: "Require full charge: {value}"
+  velocity: "Velocity: §a{value} blocks per squared second"
+  velocity-y: "Velocity in Y: §a{value} blocks per second"
+  velocity-xz: "Velocity in X-Z: §a{value} blocks per second"
+  damage-multiplier: ": §a×{value}"
+  damage-splash-multiplier: "Damage splash: §a{value}%"
+  damage-splash: "Damage splash: §a{value}"
+  duration: "Duration: §a{value} ticks"
+  amplifier: "Effect level: §a{value}"
+  disable-on-players: "Disable for players: {value}"
+  damage: "Power: §a{value}"
+  power: "Power:: §a{value}"
+  cause-fire: "Cause fire: {value}"
+  break-blocks: "Break blocks: {value}"
+  angle: "Angle: §a{value}°"
+  decrease-if-cooldown: "Cooldown decrease: {value}"
+  speed: "Speed: §a{value} blocks per second"
+  range: "Range: §a{value} blocks"
+  range_x: "Range in X: §a{value} blocks"
+  range_y: "Range in Y: §a{value} blocks"
+  range_z: "Range in Z: §a{value} blocks"
+  judge-range: "Judge range: §a{value} blocks"
+  percent: "Percent: §a{value}%"
+  cooldown-decreased: "Attack cooldown decreased: §a{value}%"
+  min-health: "Min health: §a{value}"
+  min-health-percent: "Min health percent: §a{value} blocks"
+  avaliable-on-players: "Available for players: {value}"
+  drop-xp: "Drop exp: {value}"
+  oxygen: "Oxygen: §ga{value}"
+  min-distance: "Min distance: §a{value} blocks"
+  max-health-increase: "Max health increase: §a{value}"
+  drops: "Drops: §a{value}"
+  targets: "Targets: §a{value}"
+  exp-multiplier: "Exp multiplier: §a×{value}"
+  heal: "Heal: §a{value}"
+  heal-multiplier: "Heal multiplier: §a×{value}"
+  max-distance: "Max distance: §a{value} blocks"
+  health-judging-line: "Damage judging: §a{value}"
+  high-damage-multiplier: "Above limit: §a×{value}"
+  low-damage-multiplier: "Below limit: §a×{value}"
+  absorption-multiplier: "Damage absorption multiplier: §a×{value}"
+  spread: "Spread degree: §a{value}°"
+  custom: "Display continuous: {value}"
+  food: "Food level: §6{value}"
+
+  colored: "Colored: {value}"
+
+  sound: "Sound: §a{value}"
+  cooldown: "Cooldown: §a{value} seconds"
+  particle.type: "Particle type: §a{value}"
+  particle.amount: "Particle amount: §a{value}"
+  permission-check: "Check block permission: {value}"
+  hardness-check: "Check block hardness: {value}"
+  disable-on-sneak: "Disable when sneaking: {value}"
+  enable-sound: "Enable sound: {value}"
+
+true: "§a✔"
+false: "§c✖"
+
+papi_holders:
+  player_level: "Level"
+
